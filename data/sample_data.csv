@@ -1,0 +1,501 @@
+City_Name,Area_Name,Area_Type,Population,Industrial_Units,Commercial_Units,Waste_Source,Organic_Waste_kg,Plastic_Waste_kg,Metal_Waste_kg,Hazardous_Waste_kg,E_Waste_kg,Total_Waste_kg,Recycling_Rate_percent,Collection_Frequency_days,Air_Quality_Index,Waste_Category
+Mumbai,Andheri,Semi-Urban,58408,29,343,Commercial,1890,1198,188,118,598,3992,32.61,3,72,Mixed
+Mumbai,Powai,Industrial,106296,148,248,Commercial,4116,2175,1572,450,552,8865,77.01,2,132,Mixed
+Meerut,Partapur,Semi-Urban,74995,105,24,Commercial,2471,2159,1383,562,40,6615,42.37,1,134,Non-Biodegradable
+Meerut,Shastri Nagar,Semi-Urban,123017,68,201,Industrial,4228,2180,639,396,556,7999,21.81,1,90,Mixed
+Pune,Pimpri-Chinchwad,Commercial,152810,22,92,Commercial,6459,3454,238,69,169,10389,52.68,3,103,Biodegradable
+Pune,Pimpri-Chinchwad,Urban,90841,111,151,Industrial,1948,1557,1293,341,216,5355,74.06,1,117,Non-Biodegradable
+Mumbai,Powai,Semi-Urban,120101,76,58,Residential,4653,1550,813,262,130,7408,33.02,3,137,Biodegradable
+Delhi,Okhla Industrial Area,Commercial,27424,58,216,Industrial,1197,674,780,399,265,3315,73.2,3,119,Non-Biodegradable
+Pune,Shivajinagar,Industrial,82650,44,127,Industrial,1737,1961,413,433,369,4913,34.34,2,116,Non-Biodegradable
+Lucknow,Alambagh,Urban,86576,17,362,Commercial,3038,962,135,161,921,5217,47.73,1,93,Mixed
+Delhi,Rohini,Semi-Urban,43415,97,64,Industrial,1128,1005,1239,820,220,4412,38.54,3,108,Non-Biodegradable
+Meerut,Modipuram,Commercial,70014,82,232,Industrial,3451,933,429,338,1089,6240,77.21,3,112,Mixed
+Lucknow,Gomti Nagar,Industrial,76450,79,457,Residential,2538,1970,951,635,1365,7459,64.02,3,120,Non-Biodegradable
+Pune,Kothrud,Urban,190597,43,392,Commercial,9206,2007,232,214,1305,12964,79.45,3,114,Biodegradable
+Delhi,Saket,Commercial,155167,149,327,Residential,6196,3177,1002,1430,643,12448,79.94,2,188,Mixed
+Lucknow,Indira Nagar,Commercial,39774,104,485,Industrial,929,765,1284,556,1544,5078,77.15,3,156,Non-Biodegradable
+Meerut,Shastri Nagar,Semi-Urban,124221,41,369,Commercial,3260,2363,406,381,1445,7855,66.21,1,114,Non-Biodegradable
+Mumbai,Dadar,Industrial,84583,66,113,Residential,3495,1037,417,408,185,5542,77.7,2,97,Biodegradable
+Lucknow,Indira Nagar,Urban,98452,133,380,Residential,4860,2376,1808,759,761,10564,37.97,1,171,Mixed
+Pune,Hinjewadi,Semi-Urban,100215,88,286,Industrial,4426,1509,510,715,1385,8545,77.23,1,117,Mixed
+Mumbai,Bandra,Semi-Urban,34922,57,448,Commercial,868,632,522,448,1209,3679,71.49,2,111,Non-Biodegradable
+Lucknow,Indira Nagar,Semi-Urban,173503,15,58,Industrial,3655,3443,217,130,126,7571,55.77,3,93,Non-Biodegradable
+Pune,Kothrud,Industrial,81451,117,324,Industrial,2496,2155,1031,378,1473,7533,49.83,3,152,Non-Biodegradable
+Meerut,Partapur,Industrial,172859,75,457,Commercial,5989,3406,1100,335,1209,12039,79.38,2,133,Mixed
+Meerut,Shastri Nagar,Industrial,127729,21,323,Industrial,2836,1432,128,87,1133,5616,46.3,1,84,Mixed
+Delhi,Okhla Industrial Area,Semi-Urban,22174,84,266,Industrial,917,602,889,666,909,3983,53.55,3,123,Non-Biodegradable
+Mumbai,Dadar,Semi-Urban,173491,26,20,Residential,4750,2010,259,157,43,7219,49.36,3,76,Biodegradable
+Delhi,Saket,Industrial,46078,136,48,Commercial,2171,1122,1557,647,74,5571,65.41,2,163,Mixed
+Meerut,Modipuram,Commercial,89709,81,375,Industrial,3969,1011,592,577,581,6730,60.71,2,100,Mixed
+Pune,Hinjewadi,Commercial,173195,87,352,Industrial,5191,5003,988,627,1658,13467,30.9,2,113,Non-Biodegradable
+Lucknow,Alambagh,Semi-Urban,130436,134,275,Residential,5741,3546,955,812,738,11792,23.28,3,164,Mixed
+Meerut,Partapur,Commercial,138546,48,363,Commercial,4838,1672,486,354,1114,8464,35.88,2,105,Mixed
+Lucknow,Alambagh,Commercial,118491,142,473,Residential,5134,3272,1139,575,1869,11989,74.73,2,131,Non-Biodegradable
+Pune,Hinjewadi,Commercial,141273,31,102,Residential,3856,3222,176,282,146,7682,30.14,1,74,Mixed
+Pune,Hinjewadi,Semi-Urban,134694,42,104,Residential,3544,1553,541,286,431,6355,75.2,1,117,Mixed
+Mumbai,Andheri,Commercial,194166,134,197,Residential,4445,4613,715,466,913,11152,53.42,2,158,Non-Biodegradable
+Mumbai,Dadar,Industrial,152341,118,363,Industrial,3176,1897,849,1038,777,7737,66.86,3,157,Mixed
+Mumbai,Powai,Semi-Urban,111987,81,159,Commercial,2443,1687,591,658,556,5935,62.83,2,105,Mixed
+Meerut,Shastri Nagar,Commercial,84292,44,358,Commercial,2462,1300,399,413,688,5262,58.87,3,77,Mixed
+Pune,Hinjewadi,Commercial,185903,82,301,Residential,5163,4828,708,561,358,11618,44.91,2,125,Non-Biodegradable
+Delhi,Rohini,Urban,136360,98,155,Industrial,4853,2171,936,320,526,8806,20.03,3,127,Mixed
+Meerut,Ganga Nagar,Industrial,23223,72,387,Residential,1121,309,668,684,1523,4305,38.17,1,121,Non-Biodegradable
+Lucknow,Gomti Nagar,Industrial,177847,63,478,Residential,6679,3398,780,547,2250,13654,69.58,3,125,Mixed
+Delhi,Okhla Industrial Area,Semi-Urban,176750,60,150,Commercial,6402,4976,633,258,558,12827,20.83,1,120,Mixed
+Meerut,Partapur,Urban,161704,104,416,Industrial,3970,2683,1509,334,1710,10206,30.88,3,128,Non-Biodegradable
+Mumbai,Bandra,Commercial,39494,134,371,Industrial,1041,500,1284,781,675,4281,31.29,3,138,Non-Biodegradable
+Lucknow,Indira Nagar,Commercial,174534,54,420,Commercial,3845,5221,336,185,1602,11189,77.66,1,89,Non-Biodegradable
+Mumbai,Dadar,Industrial,142472,149,475,Commercial,6566,3898,896,799,1429,13588,48.53,2,133,Mixed
+Lucknow,Charbagh,Semi-Urban,118911,90,89,Residential,5286,1691,527,513,407,8424,45.72,3,113,Biodegradable
+Lucknow,Charbagh,Urban,194044,61,323,Industrial,5415,2992,318,231,1270,10226,42.69,3,89,Mixed
+Lucknow,Indira Nagar,Commercial,120346,23,302,Industrial,4884,3264,168,152,716,9184,59.53,1,88,Mixed
+Mumbai,Dadar,Industrial,186402,113,235,Residential,4629,3983,1113,439,746,10910,32.03,1,112,Non-Biodegradable
+Meerut,Modipuram,Commercial,87481,66,228,Industrial,3102,1425,888,404,319,6138,74.1,1,101,Mixed
+Meerut,Ganga Nagar,Commercial,132323,42,52,Commercial,2852,3821,511,288,126,7598,29.55,1,87,Non-Biodegradable
+Mumbai,Bandra,Commercial,187923,36,96,Commercial,9375,3204,378,334,116,13407,29.82,1,78,Biodegradable
+Pune,Pimpri-Chinchwad,Semi-Urban,85241,65,263,Commercial,2833,2263,836,524,586,7042,75.61,2,130,Non-Biodegradable
+Pune,Kothrud,Semi-Urban,44969,15,97,Commercial,1641,545,98,66,416,2766,58.84,1,77,Mixed
+Pune,Hinjewadi,Commercial,43764,87,28,Residential,950,1000,512,667,96,3225,21.18,3,149,Mixed
+Pune,Hinjewadi,Semi-Urban,96642,92,254,Residential,4115,1268,542,538,438,6901,48.53,1,130,Mixed
+Meerut,Partapur,Urban,58054,33,265,Commercial,1635,928,266,122,577,3528,63.73,2,79,Non-Biodegradable
+Meerut,Modipuram,Urban,74653,5,267,Industrial,2557,1985,29,32,1157,5760,66.21,1,55,Non-Biodegradable
+Delhi,Dwarka,Industrial,122676,84,125,Industrial,5033,2232,593,814,328,9000,63.01,1,105,Mixed
+Meerut,Shastri Nagar,Semi-Urban,43749,59,383,Commercial,1012,1058,826,336,1134,4366,46.47,3,113,Non-Biodegradable
+Mumbai,Bandra,Semi-Urban,99267,108,238,Commercial,4275,2891,946,1001,436,9549,23.79,2,153,Mixed
+Mumbai,Andheri,Commercial,182548,47,430,Residential,4974,3426,319,263,1915,10897,71.36,1,90,Non-Biodegradable
+Lucknow,Gomti Nagar,Urban,126353,40,238,Commercial,4818,3709,562,275,675,10039,27.77,2,115,Mixed
+Mumbai,Bandra,Urban,39325,84,80,Commercial,1381,401,732,774,216,3504,25.47,3,116,Mixed
+Delhi,Dwarka,Urban,193352,68,483,Commercial,7460,3869,680,493,2406,14908,34.88,2,135,Mixed
+Delhi,Okhla Industrial Area,Urban,21972,39,375,Commercial,1046,528,210,298,1626,3708,25.74,1,103,Non-Biodegradable
+Meerut,Modipuram,Urban,89067,67,97,Industrial,2119,1615,528,648,121,5031,73.09,1,115,Mixed
+Pune,Kothrud,Industrial,54952,66,290,Residential,1742,1394,898,268,1003,5305,50.79,1,107,Non-Biodegradable
+Pune,Pimpri-Chinchwad,Commercial,155098,127,188,Industrial,4269,3858,1483,1028,672,11310,31.21,1,150,Non-Biodegradable
+Meerut,Partapur,Urban,106438,28,70,Industrial,3139,1117,391,275,168,5090,53.62,2,112,Biodegradable
+Pune,Shivajinagar,Semi-Urban,183900,84,222,Commercial,3912,4391,705,354,675,10037,21.75,3,110,Non-Biodegradable
+Delhi,Saket,Commercial,42095,41,20,Commercial,2042,616,508,341,81,3588,75.47,1,107,Mixed
+Mumbai,Bandra,Urban,45857,8,348,Residential,1720,1339,97,55,827,4038,64.98,1,97,Non-Biodegradable
+Mumbai,Andheri,Semi-Urban,144527,99,298,Residential,4839,3033,1006,907,998,10783,39.4,2,121,Mixed
+Pune,Shivajinagar,Semi-Urban,88111,133,462,Industrial,3446,983,728,875,1015,7047,40.79,1,172,Mixed
+Meerut,Ganga Nagar,Commercial,48053,125,464,Residential,1806,860,1464,582,2038,6750,37.55,1,165,Non-Biodegradable
+Mumbai,Bandra,Semi-Urban,94185,30,170,Industrial,2657,2151,284,280,697,6069,40.35,1,77,Non-Biodegradable
+Delhi,Saket,Semi-Urban,113686,67,230,Industrial,5525,3315,847,206,1009,10902,48.57,1,100,Mixed
+Delhi,Dwarka,Industrial,97578,104,326,Commercial,3577,2020,1003,871,1482,8953,69.79,2,139,Non-Biodegradable
+Mumbai,Bandra,Commercial,51895,88,249,Commercial,2590,560,1196,550,536,5432,64.0,2,137,Mixed
+Delhi,Saket,Industrial,74201,129,339,Residential,2660,1189,1697,626,1651,7823,39.51,1,125,Non-Biodegradable
+Meerut,Ganga Nagar,Semi-Urban,99861,81,196,Residential,4409,2818,723,260,208,8418,56.15,1,129,Mixed
+Delhi,Rohini,Semi-Urban,71413,114,480,Residential,3133,1618,638,702,1244,7335,47.45,2,114,Mixed
+Meerut,Shastri Nagar,Commercial,35158,123,286,Residential,1574,881,661,1053,1034,5203,56.3,3,169,Mixed
+Delhi,Okhla Industrial Area,Urban,24631,107,37,Commercial,683,359,1416,472,167,3097,32.86,3,118,Non-Biodegradable
+Delhi,Okhla Industrial Area,Commercial,48085,55,87,Industrial,1536,625,526,446,213,3346,29.74,3,95,Mixed
+Mumbai,Andheri,Urban,181023,71,341,Industrial,4009,3615,862,705,758,9949,45.91,2,139,Non-Biodegradable
+Pune,Pimpri-Chinchwad,Industrial,124034,56,336,Commercial,5888,2487,407,356,585,9723,70.33,1,119,Biodegradable
+Lucknow,Indira Nagar,Commercial,69843,141,183,Industrial,2846,1384,1295,1363,288,7176,51.27,2,163,Mixed
+Meerut,Shastri Nagar,Urban,22235,130,354,Residential,854,256,1518,600,670,3898,24.76,3,147,Non-Biodegradable
+Pune,Shivajinagar,Commercial,173923,64,142,Residential,6069,3265,582,308,192,10416,68.4,3,130,Mixed
+Pune,Pimpri-Chinchwad,Commercial,63381,86,55,Residential,1423,1516,607,315,213,4074,43.62,3,97,Non-Biodegradable
+Mumbai,Bandra,Semi-Urban,72271,13,327,Residential,3169,1581,120,49,995,5914,76.97,1,92,Mixed
+Meerut,Ganga Nagar,Semi-Urban,32174,111,90,Industrial,1595,352,1197,388,190,3722,62.11,2,156,Mixed
+Mumbai,Andheri,Industrial,72704,69,327,Commercial,2659,1999,514,399,1253,6824,61.22,2,129,Non-Biodegradable
+Delhi,Okhla Industrial Area,Commercial,83478,83,440,Commercial,1967,2390,420,561,1817,7155,73.33,2,143,Non-Biodegradable
+Pune,Hinjewadi,Industrial,166926,97,439,Residential,4287,3135,1426,337,799,9984,50.45,1,130,Non-Biodegradable
+Pune,Hinjewadi,Commercial,187849,37,186,Industrial,8273,4503,460,195,318,13749,20.86,1,79,Biodegradable
+Lucknow,Gomti Nagar,Industrial,120745,50,348,Industrial,4275,3238,636,300,458,8907,64.24,1,107,Mixed
+Meerut,Ganga Nagar,Commercial,115841,37,424,Commercial,5629,1673,297,323,1405,9327,21.66,3,89,Biodegradable
+Lucknow,Alambagh,Urban,76693,101,490,Residential,1571,1570,673,877,495,5186,25.95,3,122,Non-Biodegradable
+Meerut,Shastri Nagar,Commercial,156827,111,202,Residential,5610,2349,856,378,977,10170,29.65,3,134,Mixed
+Delhi,Dwarka,Urban,36168,147,61,Residential,1498,467,1262,1409,192,4828,55.43,2,154,Hazardous
+Meerut,Shastri Nagar,Commercial,131692,37,42,Commercial,4692,3343,461,334,170,9000,71.15,3,108,Mixed
+Meerut,Modipuram,Commercial,120056,74,462,Residential,3609,2436,455,299,600,7399,30.52,1,138,Mixed
+Lucknow,Indira Nagar,Urban,105331,72,273,Commercial,4364,1789,495,665,650,7963,32.33,3,122,Mixed
+Lucknow,Gomti Nagar,Commercial,165692,12,473,Residential,5890,3509,174,100,1841,11514,72.7,2,74,Mixed
+Meerut,Shastri Nagar,Industrial,55446,81,299,Industrial,2150,1451,1078,766,1272,6717,37.1,1,124,Non-Biodegradable
+Meerut,Partapur,Industrial,125469,110,311,Industrial,3728,3090,1109,469,942,9338,43.19,1,122,Non-Biodegradable
+Mumbai,Powai,Commercial,98521,22,491,Industrial,4679,2915,300,133,1944,9971,50.82,2,87,Non-Biodegradable
+Delhi,Dwarka,Commercial,197000,20,160,Commercial,5093,4632,210,179,387,10501,47.26,3,90,Mixed
+Lucknow,Alambagh,Urban,40048,114,232,Industrial,1636,1129,1445,1095,524,5829,36.01,1,135,Non-Biodegradable
+Pune,Pimpri-Chinchwad,Commercial,150062,34,50,Residential,3665,1790,504,327,235,6521,79.22,1,93,Mixed
+Meerut,Modipuram,Urban,146185,14,223,Industrial,6256,3889,77,135,1070,11427,77.31,2,73,Mixed
+Mumbai,Bandra,Urban,32618,78,264,Commercial,1553,408,791,587,296,3635,65.57,3,127,Mixed
+Lucknow,Alambagh,Urban,182090,106,66,Residential,8165,5393,556,1038,85,15237,55.49,1,135,Mixed
+Lucknow,Gomti Nagar,Semi-Urban,65724,71,145,Industrial,1701,1864,848,228,184,4825,46.17,2,93,Non-Biodegradable
+Delhi,Saket,Commercial,59299,11,474,Commercial,1610,888,60,98,931,3587,24.52,3,80,Non-Biodegradable
+Meerut,Modipuram,Urban,99846,143,499,Residential,3735,1346,967,773,1140,7961,45.86,1,138,Mixed
+Delhi,Saket,Semi-Urban,184444,56,195,Commercial,9026,3708,306,301,228,13569,75.61,2,126,Biodegradable
+Lucknow,Charbagh,Commercial,46007,136,136,Residential,1344,595,1174,753,284,4150,44.26,1,149,Mixed
+Pune,Hinjewadi,Urban,159457,87,173,Residential,7909,2199,720,667,522,12017,39.24,3,140,Biodegradable
+Mumbai,Andheri,Semi-Urban,60400,95,397,Commercial,2491,1091,1128,927,1094,6731,33.38,1,148,Mixed
+Delhi,Dwarka,Industrial,159894,31,484,Residential,7847,1958,178,114,1506,11603,70.3,2,116,Biodegradable
+Meerut,Modipuram,Industrial,172241,119,233,Commercial,4296,3296,1029,920,534,10075,38.75,3,125,Mixed
+Mumbai,Dadar,Industrial,67657,14,24,Commercial,1841,1312,142,80,91,3466,49.52,1,86,Mixed
+Lucknow,Alambagh,Industrial,95817,9,392,Residential,3645,1960,69,61,995,6730,35.96,1,89,Mixed
+Delhi,Rohini,Industrial,162344,20,397,Residential,6216,3244,272,172,1624,11528,20.43,3,82,Mixed
+Pune,Kothrud,Urban,182475,27,447,Residential,4103,2480,331,252,536,7702,70.53,1,68,Mixed
+Lucknow,Gomti Nagar,Industrial,157048,73,487,Industrial,4510,4706,470,226,691,10603,37.38,2,90,Non-Biodegradable
+Delhi,Okhla Industrial Area,Industrial,76670,141,374,Residential,3786,1258,1998,1041,960,9043,76.84,3,180,Mixed
+Pune,Kothrud,Semi-Urban,152298,54,393,Residential,6213,2826,352,401,1100,10892,49.72,3,111,Mixed
+Mumbai,Powai,Semi-Urban,158102,129,110,Residential,4485,3047,903,941,221,9597,31.98,3,173,Mixed
+Lucknow,Alambagh,Industrial,149014,130,100,Industrial,4211,2531,885,763,432,8822,68.53,2,123,Mixed
+Meerut,Partapur,Commercial,187455,70,101,Commercial,4202,4496,381,340,304,9723,22.24,3,126,Non-Biodegradable
+Delhi,Rohini,Industrial,89751,59,211,Commercial,4259,1661,772,201,285,7178,41.32,3,116,Mixed
+Mumbai,Dadar,Semi-Urban,79411,110,37,Commercial,2977,1356,1067,670,151,6221,52.43,3,112,Mixed
+Lucknow,Charbagh,Industrial,99628,102,410,Residential,3097,1248,938,847,979,7109,22.23,3,109,Mixed
+Lucknow,Alambagh,Industrial,50726,127,496,Commercial,2280,705,1173,859,757,5774,37.99,2,145,Mixed
+Mumbai,Dadar,Semi-Urban,126278,93,152,Commercial,3520,2126,1320,874,515,8355,64.11,1,139,Mixed
+Delhi,Rohini,Commercial,78719,12,331,Commercial,2339,1189,77,52,331,3988,66.73,1,65,Mixed
+Lucknow,Charbagh,Urban,141038,49,86,Residential,3763,3938,549,249,95,8594,31.06,2,80,Non-Biodegradable
+Mumbai,Dadar,Commercial,166776,8,93,Commercial,3654,3960,41,38,108,7801,31.56,1,100,Non-Biodegradable
+Meerut,Partapur,Commercial,89397,120,430,Commercial,2953,1870,1234,1132,658,7847,43.57,1,135,Mixed
+Mumbai,Dadar,Industrial,195277,46,372,Commercial,4800,2746,424,394,1349,9713,76.64,3,82,Mixed
+Mumbai,Bandra,Semi-Urban,153580,111,388,Industrial,4477,4131,615,602,1678,11503,69.01,3,147,Non-Biodegradable
+Delhi,Okhla Industrial Area,Urban,66288,48,77,Commercial,1500,1901,330,213,228,4172,32.79,1,107,Non-Biodegradable
+Lucknow,Indira Nagar,Commercial,123488,11,213,Industrial,6139,1911,92,96,261,8499,24.38,2,87,Biodegradable
+Delhi,Dwarka,Commercial,34587,29,166,Commercial,780,889,367,134,683,2853,74.65,2,95,Non-Biodegradable
+Delhi,Dwarka,Commercial,42423,105,164,Residential,1950,998,1109,443,269,4769,36.74,2,122,Mixed
+Delhi,Dwarka,Commercial,80409,111,22,Commercial,3587,846,1373,999,87,6892,26.39,3,122,Mixed
+Delhi,Rohini,Commercial,158962,28,220,Industrial,4307,3443,401,180,863,9194,41.48,3,86,Non-Biodegradable
+Lucknow,Charbagh,Industrial,46619,134,269,Commercial,2032,1192,933,540,530,5227,21.13,2,149,Non-Biodegradable
+Delhi,Okhla Industrial Area,Semi-Urban,87534,37,184,Industrial,2003,1282,410,337,351,4383,37.15,1,80,Mixed
+Pune,Kothrud,Semi-Urban,35084,45,374,Residential,1660,829,470,297,804,4060,47.22,1,76,Non-Biodegradable
+Lucknow,Alambagh,Semi-Urban,199120,61,364,Commercial,9375,2815,655,476,1445,14766,47.8,1,99,Biodegradable
+Meerut,Modipuram,Semi-Urban,109548,128,321,Industrial,3771,3035,1344,899,557,9606,79.13,1,165,Non-Biodegradable
+Pune,Shivajinagar,Commercial,198088,16,111,Industrial,5095,4159,163,64,416,9897,74.63,1,87,Mixed
+Meerut,Partapur,Semi-Urban,69146,132,242,Industrial,1957,803,1277,713,663,5413,22.93,3,151,Non-Biodegradable
+Pune,Pimpri-Chinchwad,Semi-Urban,191651,5,292,Commercial,8656,3729,74,31,1114,13604,32.72,1,89,Biodegradable
+Mumbai,Powai,Urban,59183,77,156,Residential,2727,1554,832,437,450,6000,34.1,2,99,Mixed
+Meerut,Ganga Nagar,Urban,113367,106,375,Residential,4328,1767,1250,944,654,8943,41.64,3,120,Mixed
+Meerut,Ganga Nagar,Industrial,170637,69,114,Industrial,5691,4503,568,463,193,11418,62.88,3,134,Mixed
+Lucknow,Indira Nagar,Commercial,69414,50,497,Residential,2185,912,638,159,1045,4939,41.94,2,99,Non-Biodegradable
+Delhi,Rohini,Semi-Urban,140874,30,394,Commercial,6311,2155,407,142,578,9593,68.07,2,82,Biodegradable
+Lucknow,Gomti Nagar,Urban,64844,136,413,Commercial,1842,1812,1410,1289,1089,7442,49.25,2,143,Non-Biodegradable
+Mumbai,Andheri,Commercial,190181,99,194,Residential,3808,2145,611,754,460,7778,37.64,1,149,Mixed
+Mumbai,Bandra,Commercial,136383,75,53,Industrial,5471,3454,776,422,142,10265,74.72,1,110,Mixed
+Pune,Shivajinagar,Industrial,49577,92,400,Industrial,1060,852,894,639,1843,5288,43.48,3,125,Non-Biodegradable
+Meerut,Partapur,Industrial,138579,121,207,Residential,3074,3677,883,595,983,9212,63.45,3,141,Non-Biodegradable
+Pune,Shivajinagar,Commercial,111185,88,247,Residential,4553,1479,1142,300,679,8153,55.35,2,125,Mixed
+Meerut,Ganga Nagar,Industrial,82177,16,254,Industrial,3551,1979,154,94,1255,7033,71.08,3,79,Mixed
+Mumbai,Bandra,Industrial,136664,17,331,Industrial,3771,2234,169,86,952,7212,24.26,1,74,Mixed
+Pune,Shivajinagar,Commercial,53528,74,240,Residential,2593,653,640,593,763,5242,20.22,3,126,Mixed
+Mumbai,Powai,Urban,154002,138,240,Commercial,3338,2993,1560,862,631,9384,79.48,2,153,Non-Biodegradable
+Pune,Hinjewadi,Commercial,38397,75,498,Industrial,1784,612,976,478,1584,5434,32.76,1,124,Non-Biodegradable
+Lucknow,Alambagh,Semi-Urban,62402,118,175,Industrial,2716,1681,947,1143,801,7288,38.72,3,128,Mixed
+Mumbai,Andheri,Industrial,113175,56,108,Industrial,5534,2093,481,445,354,8907,27.93,1,104,Biodegradable
+Meerut,Partapur,Commercial,137347,83,419,Residential,3048,3225,1089,365,551,8278,31.99,1,143,Non-Biodegradable
+Mumbai,Andheri,Semi-Urban,186042,15,126,Residential,4004,2777,171,108,519,7579,61.9,2,98,Mixed
+Lucknow,Indira Nagar,Urban,81889,45,482,Industrial,1886,2285,563,164,1250,6148,62.95,3,101,Non-Biodegradable
+Mumbai,Andheri,Industrial,27984,108,498,Commercial,972,719,1401,439,1312,4843,67.18,1,135,Non-Biodegradable
+Delhi,Saket,Industrial,42110,123,366,Industrial,1211,968,632,901,1707,5419,76.87,2,133,Non-Biodegradable
+Meerut,Ganga Nagar,Semi-Urban,173019,79,400,Industrial,7052,3482,870,347,869,12620,32.92,1,97,Mixed
+Pune,Pimpri-Chinchwad,Industrial,39426,92,367,Industrial,1493,1105,483,721,1403,5205,54.35,3,144,Non-Biodegradable
+Mumbai,Powai,Commercial,197959,45,445,Commercial,8384,3747,308,335,1225,13999,30.62,2,86,Mixed
+Mumbai,Bandra,Commercial,102359,101,140,Industrial,2538,2621,1188,971,358,7676,79.37,2,155,Non-Biodegradable
+Pune,Hinjewadi,Commercial,138556,52,371,Commercial,5939,4125,762,164,790,11780,28.49,3,83,Mixed
+Lucknow,Charbagh,Urban,115923,70,447,Commercial,3901,1823,397,656,933,7710,71.85,3,94,Mixed
+Mumbai,Powai,Commercial,186350,54,66,Commercial,4338,2972,333,360,201,8204,62.21,3,114,Mixed
+Delhi,Dwarka,Commercial,149639,138,284,Residential,5817,2984,791,912,420,10924,67.14,3,153,Mixed
+Lucknow,Alambagh,Industrial,188549,133,263,Residential,4593,4910,1578,695,347,12123,58.12,3,169,Non-Biodegradable
+Lucknow,Indira Nagar,Urban,140380,60,126,Commercial,6831,2266,830,398,501,10826,78.45,3,94,Biodegradable
+Meerut,Modipuram,Commercial,154092,77,428,Residential,6784,4508,424,499,637,12852,49.95,3,108,Mixed
+Pune,Shivajinagar,Industrial,167344,13,455,Industrial,7856,4112,91,65,1906,14030,32.01,2,61,Mixed
+Mumbai,Dadar,Semi-Urban,154553,52,198,Industrial,3795,2387,279,174,243,6878,42.34,3,85,Mixed
+Mumbai,Dadar,Industrial,169739,91,243,Commercial,4106,3507,1078,669,261,9621,73.24,3,112,Non-Biodegradable
+Lucknow,Gomti Nagar,Commercial,100799,53,131,Industrial,4729,2502,568,278,147,8224,39.04,2,82,Mixed
+Delhi,Okhla Industrial Area,Semi-Urban,157743,60,442,Residential,5990,2559,619,376,2031,11575,33.07,3,105,Mixed
+Delhi,Dwarka,Semi-Urban,162570,69,100,Industrial,4067,4375,973,508,359,10282,57.17,1,139,Non-Biodegradable
+Lucknow,Indira Nagar,Semi-Urban,145253,5,461,Residential,3690,3588,41,19,926,8264,44.27,3,81,Non-Biodegradable
+Delhi,Rohini,Commercial,155885,29,235,Residential,5452,3313,238,172,1120,10295,57.04,3,84,Mixed
+Pune,Hinjewadi,Commercial,21049,41,67,Industrial,732,456,259,242,328,2017,64.1,3,79,Non-Biodegradable
+Mumbai,Bandra,Industrial,165597,98,493,Residential,3534,2913,1440,427,1285,9599,71.43,1,142,Non-Biodegradable
+Delhi,Rohini,Commercial,95650,71,47,Commercial,3437,2763,687,637,148,7672,21.55,2,105,Mixed
+Lucknow,Indira Nagar,Urban,71425,23,457,Industrial,3329,943,300,190,1046,5808,56.38,2,85,Mixed
+Meerut,Shastri Nagar,Semi-Urban,74463,118,498,Industrial,2934,835,1020,1145,1337,7271,46.59,2,125,Mixed
+Meerut,Ganga Nagar,Commercial,72986,98,149,Industrial,1723,785,780,340,369,3997,56.45,3,103,Mixed
+Lucknow,Indira Nagar,Semi-Urban,68188,115,454,Industrial,2993,1793,876,780,454,6896,68.56,3,150,Mixed
+Delhi,Dwarka,Industrial,21748,7,251,Residential,1056,574,91,21,1024,2766,65.9,1,98,Non-Biodegradable
+Pune,Hinjewadi,Semi-Urban,198372,50,103,Industrial,5032,3179,703,185,466,9565,36.31,1,126,Mixed
+Pune,Pimpri-Chinchwad,Commercial,164636,116,267,Residential,3681,4465,1182,630,1188,11146,54.41,2,142,Non-Biodegradable
+Delhi,Rohini,Commercial,196343,23,463,Industrial,6664,4003,282,129,862,11940,26.37,1,97,Mixed
+Mumbai,Powai,Commercial,64248,9,255,Residential,1939,1766,116,85,424,4330,65.03,2,68,Non-Biodegradable
+Mumbai,Bandra,Urban,162187,141,328,Industrial,6894,1712,726,708,1172,11212,35.84,2,145,Biodegradable
+Pune,Hinjewadi,Commercial,112688,137,115,Commercial,5464,2362,1717,748,378,10669,60.53,3,153,Mixed
+Meerut,Partapur,Industrial,189811,68,241,Residential,5515,2393,947,550,1005,10410,68.34,2,117,Mixed
+Pune,Kothrud,Industrial,72283,71,422,Industrial,1652,2037,802,366,1307,6164,37.38,3,106,Non-Biodegradable
+Mumbai,Powai,Urban,197552,132,276,Commercial,4065,4507,1538,945,767,11822,24.48,3,149,Non-Biodegradable
+Meerut,Shastri Nagar,Urban,40965,87,149,Commercial,1269,544,805,308,434,3360,36.99,2,126,Non-Biodegradable
+Pune,Hinjewadi,Semi-Urban,126583,67,163,Industrial,5034,2061,933,329,585,8942,32.58,2,88,Mixed
+Delhi,Saket,Urban,168604,145,114,Industrial,4052,3065,1748,1014,512,10391,36.24,1,175,Non-Biodegradable
+Pune,Kothrud,Semi-Urban,41415,30,342,Residential,1015,765,283,106,412,2581,48.52,2,116,Non-Biodegradable
+Lucknow,Indira Nagar,Semi-Urban,148931,80,90,Residential,4465,1967,676,368,167,7643,47.37,2,136,Mixed
+Lucknow,Charbagh,Commercial,61087,70,244,Residential,2382,948,1037,460,716,5543,75.71,2,104,Mixed
+Delhi,Okhla Industrial Area,Industrial,152920,8,198,Industrial,3520,3044,110,34,224,6932,67.47,3,90,Mixed
+Pune,Hinjewadi,Industrial,88804,127,188,Residential,2253,1084,1136,1179,194,5846,43.99,3,147,Mixed
+Delhi,Rohini,Commercial,46553,68,83,Residential,2054,996,494,385,198,4127,56.73,2,94,Mixed
+Delhi,Dwarka,Industrial,55093,102,29,Commercial,1558,558,678,628,127,3549,58.83,2,141,Mixed
+Meerut,Ganga Nagar,Urban,137882,123,166,Industrial,4341,2826,1541,551,208,9467,32.02,3,126,Mixed
+Pune,Shivajinagar,Urban,69432,107,347,Residential,2909,1322,1528,392,1250,7401,35.4,2,148,Non-Biodegradable
+Mumbai,Bandra,Commercial,177586,145,149,Commercial,4283,1827,2162,582,637,9491,34.19,2,151,Mixed
+Mumbai,Dadar,Commercial,42235,29,416,Industrial,889,560,424,263,629,2765,78.95,3,110,Non-Biodegradable
+Delhi,Rohini,Commercial,101893,71,205,Commercial,4452,1712,360,583,893,8000,67.52,1,104,Mixed
+Meerut,Partapur,Semi-Urban,72684,76,216,Residential,3166,1570,426,594,305,6061,36.65,3,131,Mixed
+Mumbai,Bandra,Industrial,116638,29,466,Industrial,4063,1356,145,192,1119,6875,57.47,1,113,Mixed
+Mumbai,Bandra,Urban,63602,122,87,Residential,2875,1201,773,1095,240,6184,71.08,1,133,Mixed
+Delhi,Rohini,Industrial,191723,33,197,Residential,9393,4826,463,259,329,15270,48.99,2,96,Biodegradable
+Mumbai,Dadar,Urban,72736,144,409,Residential,2751,1799,1006,770,1093,7419,45.17,1,177,Non-Biodegradable
+Lucknow,Gomti Nagar,Industrial,102940,114,432,Industrial,3962,2103,1292,624,1078,9059,33.71,3,161,Mixed
+Lucknow,Gomti Nagar,Industrial,69968,134,464,Residential,2538,1326,1862,1144,1918,8788,41.86,2,178,Non-Biodegradable
+Pune,Kothrud,Urban,24626,46,100,Industrial,766,626,257,409,226,2284,73.47,3,82,Mixed
+Pune,Pimpri-Chinchwad,Urban,108588,48,223,Commercial,5337,2742,515,273,998,9865,22.34,2,113,Mixed
+Delhi,Saket,Urban,71443,38,272,Commercial,2115,1285,329,366,552,4647,67.75,1,77,Mixed
+Mumbai,Bandra,Urban,137661,71,326,Residential,5065,3549,430,265,1279,10588,64.04,1,114,Mixed
+Pune,Kothrud,Semi-Urban,107647,57,139,Commercial,3052,1928,479,248,626,6333,36.3,2,125,Mixed
+Pune,Hinjewadi,Industrial,40858,46,107,Industrial,1178,669,493,249,162,2751,50.51,1,104,Mixed
+Pune,Hinjewadi,Semi-Urban,166613,63,98,Industrial,4845,4809,566,228,144,10592,58.64,3,128,Non-Biodegradable
+Mumbai,Bandra,Urban,138511,143,451,Residential,4773,4049,2033,1265,1288,13408,29.64,1,172,Non-Biodegradable
+Mumbai,Dadar,Commercial,185630,112,78,Residential,6709,3170,717,839,349,11784,74.93,3,152,Mixed
+Meerut,Modipuram,Industrial,113273,115,249,Industrial,4591,2991,1582,703,673,10540,51.09,1,116,Mixed
+Pune,Pimpri-Chinchwad,Industrial,167300,36,466,Commercial,5315,1895,283,307,940,8740,53.27,2,82,Biodegradable
+Pune,Pimpri-Chinchwad,Industrial,174360,83,224,Industrial,6176,4976,1210,619,950,13931,32.01,1,142,Non-Biodegradable
+Lucknow,Indira Nagar,Industrial,182167,110,471,Industrial,7037,2368,980,835,2252,13472,49.77,2,125,Mixed
+Pune,Shivajinagar,Urban,67696,30,418,Industrial,1638,1100,382,284,513,3917,65.89,1,107,Non-Biodegradable
+Delhi,Dwarka,Commercial,187292,85,483,Commercial,7172,5090,602,556,2117,15537,36.44,1,101,Non-Biodegradable
+Meerut,Shastri Nagar,Semi-Urban,125142,45,245,Residential,5564,1404,520,301,328,8117,22.76,2,117,Biodegradable
+Delhi,Okhla Industrial Area,Industrial,24049,18,421,Commercial,627,290,175,77,445,1614,63.53,3,95,Non-Biodegradable
+Delhi,Dwarka,Urban,162676,47,310,Commercial,5445,2626,488,261,734,9554,58.18,2,84,Mixed
+Pune,Kothrud,Commercial,42255,142,403,Commercial,2024,1197,1295,1264,1844,7624,65.62,3,152,Non-Biodegradable
+Lucknow,Indira Nagar,Industrial,45123,90,125,Commercial,1603,968,946,788,560,4865,54.72,2,109,Non-Biodegradable
+Lucknow,Charbagh,Commercial,59620,122,117,Commercial,1648,1209,1216,440,426,4939,38.81,1,130,Non-Biodegradable
+Lucknow,Indira Nagar,Urban,80389,29,154,Residential,3052,2012,408,213,341,6026,69.53,3,69,Mixed
+Meerut,Modipuram,Commercial,130163,129,303,Commercial,3215,2525,1521,905,1242,9408,56.75,1,136,Non-Biodegradable
+Meerut,Modipuram,Semi-Urban,75433,63,478,Industrial,2700,851,715,443,663,5372,51.1,3,120,Mixed
+Lucknow,Charbagh,Commercial,34218,149,123,Commercial,1087,748,2040,579,440,4894,74.39,3,172,Non-Biodegradable
+Pune,Pimpri-Chinchwad,Semi-Urban,149314,14,211,Industrial,5936,2856,101,106,338,9337,45.85,3,77,Biodegradable
+Lucknow,Indira Nagar,Semi-Urban,134758,80,288,Industrial,4324,3343,705,493,1324,10189,52.76,2,116,Non-Biodegradable
+Pune,Shivajinagar,Industrial,101567,74,112,Residential,3793,2112,563,430,491,7389,44.58,1,108,Mixed
+Lucknow,Charbagh,Industrial,55310,28,382,Industrial,2337,1140,208,225,845,4755,51.5,3,94,Mixed
+Lucknow,Indira Nagar,Semi-Urban,25379,73,445,Commercial,965,376,1051,521,1874,4787,74.11,1,103,Non-Biodegradable
+Meerut,Partapur,Urban,147546,89,343,Industrial,5155,2282,1006,840,1070,10353,37.76,2,147,Mixed
+Mumbai,Bandra,Urban,72217,9,136,Industrial,2176,1910,134,89,674,4983,78.51,1,73,Non-Biodegradable
+Meerut,Ganga Nagar,Urban,97373,142,195,Residential,3456,1725,1046,661,514,7402,38.73,1,129,Mixed
+Pune,Pimpri-Chinchwad,Urban,24596,25,138,Residential,894,510,147,223,546,2320,37.66,2,74,Non-Biodegradable
+Pune,Hinjewadi,Industrial,183857,72,203,Residential,6918,5504,819,552,230,14023,34.07,2,120,Mixed
+Lucknow,Indira Nagar,Industrial,32778,113,414,Residential,1325,388,1500,1010,1333,5556,34.75,2,130,Non-Biodegradable
+Meerut,Modipuram,Semi-Urban,65022,77,120,Industrial,2198,667,856,409,218,4348,39.93,1,103,Mixed
+Meerut,Partapur,Urban,103498,60,370,Residential,4526,2348,477,509,813,8673,34.45,1,85,Mixed
+Lucknow,Gomti Nagar,Semi-Urban,96488,58,488,Industrial,3315,1097,810,330,1303,6855,77.98,1,114,Mixed
+Lucknow,Charbagh,Industrial,149438,146,216,Residential,6976,2669,1494,480,750,12369,61.61,2,174,Mixed
+Mumbai,Bandra,Urban,99316,142,438,Industrial,4056,1769,773,840,772,8210,33.04,2,176,Mixed
+Meerut,Ganga Nagar,Commercial,91130,63,342,Residential,3494,1061,698,529,459,6241,51.02,2,117,Mixed
+Lucknow,Alambagh,Urban,131440,95,75,Residential,4313,3561,673,831,223,9601,60.53,3,114,Mixed
+Delhi,Dwarka,Semi-Urban,153975,73,24,Commercial,3115,3845,401,391,95,7847,27.25,3,133,Non-Biodegradable
+Pune,Shivajinagar,Semi-Urban,55220,58,448,Industrial,2105,825,322,363,880,4495,23.61,2,131,Mixed
+Meerut,Partapur,Industrial,78255,27,184,Industrial,2127,1718,278,199,333,4655,42.46,2,112,Non-Biodegradable
+Meerut,Shastri Nagar,Semi-Urban,189033,82,90,Commercial,5648,3391,822,704,326,10891,20.97,1,110,Mixed
+Delhi,Dwarka,Industrial,193597,95,116,Industrial,8858,4437,884,582,156,14917,27.7,3,123,Mixed
+Lucknow,Gomti Nagar,Commercial,171400,18,270,Residential,4704,3511,215,108,432,8970,76.36,1,87,Mixed
+Meerut,Ganga Nagar,Industrial,45183,29,237,Commercial,1029,1327,148,270,800,3574,68.44,2,103,Non-Biodegradable
+Mumbai,Dadar,Commercial,135721,130,128,Commercial,3787,4051,1298,629,249,10014,66.68,3,154,Non-Biodegradable
+Lucknow,Charbagh,Industrial,126675,88,90,Industrial,5830,1912,565,746,220,9273,72.86,3,130,Biodegradable
+Mumbai,Dadar,Industrial,138859,48,187,Industrial,3057,2260,310,448,618,6693,27.41,2,92,Mixed
+Lucknow,Gomti Nagar,Industrial,39804,89,313,Industrial,928,699,796,686,483,3592,75.44,2,141,Non-Biodegradable
+Pune,Shivajinagar,Commercial,50184,108,106,Industrial,1394,555,1161,751,375,4236,44.27,2,145,Mixed
+Meerut,Modipuram,Commercial,108526,148,442,Industrial,3290,3172,1057,657,1218,9394,54.66,3,163,Non-Biodegradable
+Pune,Kothrud,Industrial,161645,133,283,Commercial,6764,2494,1262,571,1200,12291,43.75,3,155,Mixed
+Mumbai,Dadar,Commercial,24268,120,184,Commercial,867,648,817,644,437,3413,21.17,1,153,Non-Biodegradable
+Lucknow,Charbagh,Urban,147212,148,242,Industrial,6320,4027,992,1386,917,13642,40.97,3,155,Mixed
+Pune,Kothrud,Commercial,28496,109,85,Industrial,839,799,635,1055,220,3548,47.08,1,146,Hazardous
+Pune,Pimpri-Chinchwad,Commercial,135525,23,403,Industrial,2902,2432,328,166,1066,6894,50.98,3,102,Non-Biodegradable
+Meerut,Shastri Nagar,Commercial,157567,61,286,Residential,3599,1605,845,295,766,7110,55.91,2,92,Mixed
+Meerut,Partapur,Urban,21941,61,349,Commercial,562,638,563,537,1392,3692,20.11,1,96,Non-Biodegradable
+Lucknow,Gomti Nagar,Urban,188731,140,93,Residential,6465,2405,767,845,423,10905,42.8,1,174,Mixed
+Meerut,Shastri Nagar,Urban,95734,58,334,Industrial,4338,2159,787,361,1257,8902,21.07,3,130,Mixed
+Meerut,Partapur,Urban,79132,58,193,Industrial,2298,2274,332,551,443,5898,75.45,1,104,Non-Biodegradable
+Lucknow,Charbagh,Commercial,167434,148,497,Industrial,6441,4609,1931,1455,1734,16170,30.45,1,162,Non-Biodegradable
+Lucknow,Gomti Nagar,Urban,44004,37,243,Commercial,2039,909,527,156,958,4589,23.85,3,87,Non-Biodegradable
+Meerut,Modipuram,Industrial,107956,99,417,Commercial,2293,1508,830,890,1881,7402,77.75,2,128,Non-Biodegradable
+Delhi,Okhla Industrial Area,Industrial,183633,57,171,Residential,5369,4585,672,234,747,11607,58.77,2,82,Non-Biodegradable
+Delhi,Okhla Industrial Area,Commercial,140660,32,88,Commercial,5223,2775,431,267,286,8982,38.54,2,87,Mixed
+Delhi,Okhla Industrial Area,Urban,179880,113,201,Commercial,3655,3120,710,565,299,8349,75.41,3,133,Mixed
+Meerut,Modipuram,Urban,184939,86,152,Commercial,6270,3282,1271,381,736,11940,61.08,3,121,Mixed
+Mumbai,Powai,Industrial,145130,64,194,Residential,5347,2729,910,405,948,10339,78.62,1,117,Mixed
+Mumbai,Andheri,Urban,56930,37,120,Residential,1376,1679,456,143,449,4103,53.98,3,86,Non-Biodegradable
+Lucknow,Alambagh,Commercial,106317,80,218,Residential,3938,2022,412,250,1088,7710,47.26,2,113,Mixed
+Delhi,Dwarka,Industrial,122675,134,155,Residential,5113,2804,1726,752,357,10752,21.65,3,149,Mixed
+Meerut,Partapur,Urban,183548,79,125,Residential,7304,3611,1156,293,200,12564,62.98,3,104,Mixed
+Lucknow,Gomti Nagar,Semi-Urban,74200,5,338,Residential,3355,1619,29,32,1279,6314,23.42,1,55,Mixed
+Pune,Shivajinagar,Urban,195561,106,103,Commercial,7381,3489,1259,804,399,13332,56.34,1,150,Mixed
+Delhi,Dwarka,Urban,32622,93,299,Residential,773,913,719,681,719,3805,29.35,3,141,Non-Biodegradable
+Mumbai,Andheri,Semi-Urban,103094,32,265,Commercial,3196,1263,341,126,1137,6063,63.76,3,101,Mixed
+Delhi,Saket,Commercial,155982,66,310,Commercial,4073,3376,335,345,1483,9612,71.63,3,113,Non-Biodegradable
+Delhi,Rohini,Commercial,171483,30,224,Industrial,6448,4285,388,276,1044,12441,28.99,3,86,Mixed
+Delhi,Dwarka,Urban,91367,129,340,Industrial,1998,2736,1072,1023,619,7448,68.36,2,129,Non-Biodegradable
+Pune,Pimpri-Chinchwad,Commercial,138063,63,311,Commercial,4435,3869,881,390,1523,11098,69.1,2,120,Non-Biodegradable
+Pune,Hinjewadi,Commercial,66954,48,339,Industrial,1804,1447,477,363,1446,5537,49.79,3,80,Non-Biodegradable
+Meerut,Partapur,Commercial,138493,112,397,Industrial,4408,2301,1332,1115,1290,10446,63.88,2,165,Mixed
+Delhi,Rohini,Urban,120537,68,316,Commercial,4093,2949,524,535,859,8960,49.11,3,120,Mixed
+Meerut,Partapur,Industrial,94785,56,397,Industrial,3947,2473,391,171,1045,8027,63.68,1,97,Mixed
+Pune,Hinjewadi,Industrial,74763,34,114,Commercial,2969,2145,402,297,321,6134,62.38,3,104,Mixed
+Meerut,Ganga Nagar,Semi-Urban,145911,105,106,Commercial,6359,4132,548,369,473,11881,34.44,3,142,Mixed
+Lucknow,Alambagh,Industrial,29894,148,189,Residential,1419,730,1582,593,230,4554,40.07,3,166,Non-Biodegradable
+Meerut,Partapur,Semi-Urban,131896,98,98,Commercial,5853,2491,1386,528,401,10659,50.38,2,110,Mixed
+Lucknow,Alambagh,Industrial,171709,111,454,Residential,3641,4186,946,381,904,10058,56.7,1,130,Non-Biodegradable
+Meerut,Modipuram,Semi-Urban,103042,39,358,Industrial,4869,2355,477,324,1545,9570,24.62,2,79,Mixed
+Pune,Kothrud,Industrial,167948,133,107,Residential,7212,4945,1065,1130,282,14634,78.25,1,132,Mixed
+Lucknow,Charbagh,Urban,175524,59,481,Industrial,7933,5254,394,329,1323,15233,26.62,2,91,Mixed
+Delhi,Okhla Industrial Area,Industrial,62476,69,60,Residential,2387,1137,696,300,196,4716,54.6,1,121,Mixed
+Meerut,Ganga Nagar,Urban,114966,144,399,Residential,3480,1249,2020,1312,1368,9429,49.6,1,137,Mixed
+Delhi,Okhla Industrial Area,Semi-Urban,48646,86,293,Commercial,1435,539,874,680,1237,4765,39.95,3,148,Non-Biodegradable
+Lucknow,Charbagh,Semi-Urban,58517,112,145,Industrial,2891,1336,567,946,543,6283,22.19,2,156,Mixed
+Delhi,Saket,Urban,188615,132,393,Commercial,9348,2821,741,1017,1806,15733,63.01,2,155,Mixed
+Lucknow,Alambagh,Commercial,110105,49,20,Residential,3569,1835,267,365,36,6072,24.62,1,108,Mixed
+Delhi,Saket,Commercial,161246,142,207,Residential,3808,1969,728,560,603,7668,26.51,2,133,Mixed
+Pune,Kothrud,Commercial,59742,94,135,Residential,2462,1212,776,290,581,5321,61.03,1,149,Mixed
+Meerut,Shastri Nagar,Industrial,60957,52,488,Commercial,2771,765,748,370,1696,6350,44.9,2,84,Non-Biodegradable
+Delhi,Rohini,Industrial,30384,124,100,Commercial,624,807,1197,993,195,3816,49.84,1,135,Hazardous
+Mumbai,Powai,Semi-Urban,41348,105,345,Industrial,1820,894,1383,908,1464,6469,53.16,1,144,Non-Biodegradable
+Mumbai,Dadar,Semi-Urban,71843,93,345,Industrial,2909,795,1273,883,1643,7503,69.41,2,106,Mixed
+Delhi,Dwarka,Industrial,164981,24,485,Industrial,4601,4094,342,142,1877,11056,43.12,2,85,Non-Biodegradable
+Mumbai,Andheri,Semi-Urban,80155,110,389,Commercial,2980,987,1554,758,506,6785,35.95,3,117,Mixed
+Delhi,Dwarka,Commercial,123043,8,328,Residential,2713,3444,113,44,1614,7928,39.64,2,59,Non-Biodegradable
+Mumbai,Andheri,Industrial,186166,93,200,Commercial,5638,4525,1392,547,318,12420,78.93,3,123,Non-Biodegradable
+Lucknow,Gomti Nagar,Urban,183154,107,81,Industrial,6325,2591,1350,966,180,11412,30.01,3,147,Mixed
+Delhi,Rohini,Urban,167256,80,359,Industrial,7197,4389,784,502,698,13570,50.84,1,118,Mixed
+Meerut,Shastri Nagar,Semi-Urban,84468,69,67,Residential,3204,1136,559,506,270,5675,61.73,1,132,Mixed
+Mumbai,Powai,Industrial,45469,85,194,Industrial,911,1256,929,340,388,3824,79.1,1,139,Non-Biodegradable
+Delhi,Saket,Urban,36509,149,265,Industrial,938,916,1642,910,1240,5646,25.64,3,149,Non-Biodegradable
+Delhi,Saket,Urban,189051,131,418,Commercial,3907,3160,1903,622,610,10202,30.69,2,127,Non-Biodegradable
+Mumbai,Bandra,Industrial,132451,11,478,Commercial,2935,2260,122,84,1008,6409,59.67,2,79,Non-Biodegradable
+Pune,Kothrud,Industrial,152018,58,286,Industrial,4657,4182,732,410,1095,11076,71.04,3,116,Non-Biodegradable
+Pune,Kothrud,Commercial,166478,114,336,Residential,7826,2254,1229,892,1057,13258,39.58,3,147,Mixed
+Delhi,Okhla Industrial Area,Commercial,128475,35,461,Industrial,6267,1843,177,243,1242,9772,23.74,3,88,Biodegradable
+Mumbai,Powai,Commercial,144914,135,465,Commercial,6726,2977,1297,795,1325,13120,51.12,2,166,Mixed
+Meerut,Ganga Nagar,Semi-Urban,141370,59,354,Industrial,3591,3866,382,260,489,8588,43.07,2,91,Non-Biodegradable
+Pune,Hinjewadi,Urban,152049,138,469,Residential,5569,4252,1385,1183,816,13205,50.01,2,138,Mixed
+Lucknow,Alambagh,Industrial,41589,93,423,Industrial,1067,845,1213,427,1275,4827,77.73,2,121,Non-Biodegradable
+Delhi,Saket,Industrial,143161,16,240,Commercial,3302,3614,205,77,388,7586,55.9,3,74,Non-Biodegradable
+Lucknow,Alambagh,Industrial,64125,107,172,Commercial,3179,1570,1120,573,271,6713,44.34,3,135,Mixed
+Delhi,Saket,Urban,196748,113,202,Commercial,4270,3382,787,624,599,9662,54.58,3,141,Mixed
+Pune,Hinjewadi,Commercial,142090,9,333,Residential,2970,2742,83,38,751,6584,54.48,1,65,Non-Biodegradable
+Meerut,Ganga Nagar,Industrial,163052,111,458,Residential,7795,4872,561,469,1424,15121,21.01,2,123,Mixed
+Pune,Shivajinagar,Industrial,189439,70,57,Residential,9242,5466,400,521,105,15734,74.85,1,129,Mixed
+Meerut,Ganga Nagar,Commercial,43698,51,174,Industrial,1266,1237,577,235,760,4075,70.7,1,107,Non-Biodegradable
+Pune,Shivajinagar,Commercial,44496,96,287,Industrial,1714,1123,503,846,1183,5369,75.83,3,119,Non-Biodegradable
+Lucknow,Alambagh,Semi-Urban,104325,48,26,Commercial,4335,2202,593,164,28,7322,76.49,2,90,Mixed
+Meerut,Partapur,Urban,77182,65,412,Residential,2899,1407,346,324,1778,6754,65.32,3,97,Non-Biodegradable
+Delhi,Saket,Urban,77281,58,165,Industrial,2216,1305,800,490,350,5161,65.11,2,113,Mixed
+Delhi,Okhla Industrial Area,Industrial,169788,17,30,Commercial,7895,4085,160,156,88,12384,61.26,3,97,Biodegradable
+Mumbai,Andheri,Urban,37769,141,495,Industrial,1707,1049,971,659,2316,6702,52.68,2,176,Non-Biodegradable
+Lucknow,Alambagh,Urban,164184,48,140,Industrial,5637,2853,259,388,374,9511,31.12,3,107,Mixed
+Lucknow,Gomti Nagar,Commercial,64707,116,279,Industrial,2799,1483,954,354,1367,6957,36.28,2,147,Non-Biodegradable
+Mumbai,Powai,Industrial,74106,34,106,Industrial,3101,1975,228,294,180,5778,30.9,1,101,Mixed
+Pune,Pimpri-Chinchwad,Semi-Urban,125779,85,304,Industrial,5615,2493,922,798,1039,10867,54.86,2,112,Mixed
+Meerut,Shastri Nagar,Industrial,23487,8,79,Industrial,526,485,74,24,321,1430,77.31,2,61,Non-Biodegradable
+Meerut,Shastri Nagar,Industrial,163329,147,289,Industrial,4390,2253,2055,956,1093,10747,51.24,2,165,Non-Biodegradable
+Lucknow,Indira Nagar,Industrial,146302,136,351,Commercial,3394,3283,1948,1167,1698,11490,75.11,1,154,Non-Biodegradable
+Pune,Shivajinagar,Semi-Urban,29961,63,211,Industrial,1046,832,783,625,786,4072,45.2,3,135,Non-Biodegradable
+Mumbai,Andheri,Industrial,47827,146,72,Industrial,1267,1144,1097,926,197,4631,55.08,3,138,Non-Biodegradable
+Mumbai,Bandra,Semi-Urban,20460,5,76,Industrial,918,516,52,24,238,1748,32.26,3,77,Mixed
+Delhi,Dwarka,Semi-Urban,108119,33,80,Residential,5380,2699,392,188,379,9038,53.72,1,83,Mixed
+Delhi,Okhla Industrial Area,Semi-Urban,45973,34,212,Industrial,1286,1267,229,229,771,3782,66.08,1,88,Non-Biodegradable
+Mumbai,Powai,Urban,82659,99,221,Residential,1898,1177,1400,800,486,5761,44.02,2,154,Non-Biodegradable
+Delhi,Rohini,Commercial,195115,86,295,Residential,4460,5562,685,817,1470,12994,72.17,3,140,Non-Biodegradable
+Lucknow,Gomti Nagar,Industrial,178010,117,379,Commercial,8881,4944,1637,448,1115,17025,49.33,2,123,Mixed
+Delhi,Dwarka,Industrial,73314,54,226,Commercial,2600,2117,532,522,365,6136,32.84,2,99,Mixed
+Meerut,Ganga Nagar,Semi-Urban,132669,112,427,Industrial,6255,2875,647,557,1789,12123,38.4,1,111,Mixed
+Delhi,Saket,Commercial,182846,120,344,Commercial,6212,2181,1655,751,1392,12191,70.12,1,119,Mixed
+Meerut,Shastri Nagar,Commercial,83892,120,406,Commercial,2282,2066,1550,421,1928,8247,39.55,3,137,Non-Biodegradable
+Pune,Hinjewadi,Commercial,103233,53,306,Industrial,4827,1553,486,167,1470,8503,47.14,1,89,Mixed
+Meerut,Modipuram,Semi-Urban,112359,73,385,Commercial,3264,1662,526,422,995,6869,73.61,2,121,Mixed
+Delhi,Saket,Industrial,66558,55,446,Commercial,1497,1492,697,365,1255,5306,52.71,3,90,Non-Biodegradable
+Mumbai,Dadar,Semi-Urban,101925,102,359,Industrial,2373,1837,1074,926,1563,7773,59.43,3,136,Non-Biodegradable
+Meerut,Partapur,Semi-Urban,105246,129,78,Industrial,2319,2093,812,872,257,6353,24.7,2,168,Mixed
+Mumbai,Powai,Semi-Urban,100254,20,482,Commercial,4910,2545,108,86,715,8364,65.65,3,80,Mixed
+Delhi,Saket,Industrial,125049,21,285,Industrial,3551,1516,234,173,676,6150,74.51,2,110,Mixed
+Meerut,Modipuram,Urban,98831,139,25,Industrial,2047,2305,720,733,122,5927,44.25,2,154,Non-Biodegradable
+Lucknow,Indira Nagar,Commercial,99942,10,96,Residential,2194,2051,69,98,414,4826,40.96,1,74,Non-Biodegradable
+Meerut,Shastri Nagar,Urban,95459,13,346,Industrial,3593,1704,168,113,808,6386,75.28,1,79,Mixed
+Pune,Hinjewadi,Semi-Urban,82958,141,412,Industrial,2473,1006,727,872,592,5670,22.68,1,154,Mixed
+Pune,Shivajinagar,Commercial,34435,37,472,Industrial,708,565,464,310,1289,3336,55.12,3,88,Non-Biodegradable
+Meerut,Partapur,Industrial,165546,113,314,Industrial,6401,1865,1256,1022,837,11381,69.17,1,135,Mixed
+Lucknow,Alambagh,Urban,193071,30,265,Industrial,6254,4985,348,194,632,12413,78.55,1,73,Mixed
+Lucknow,Indira Nagar,Urban,119620,135,375,Industrial,3971,1280,1670,618,1555,9094,79.73,2,131,Mixed
+Pune,Shivajinagar,Industrial,45986,29,212,Residential,2268,1045,319,140,636,4408,56.2,3,101,Mixed
+Pune,Shivajinagar,Semi-Urban,77554,113,213,Commercial,3082,2159,1156,412,995,7804,21.35,1,115,Non-Biodegradable
+Meerut,Partapur,Industrial,33817,112,125,Commercial,809,927,858,934,291,3819,77.42,2,143,Non-Biodegradable
+Meerut,Ganga Nagar,Urban,64906,129,268,Commercial,2412,1321,1020,1080,959,6792,74.45,2,134,Mixed
+Mumbai,Powai,Industrial,175726,64,211,Commercial,5364,1892,704,425,442,8827,24.39,3,124,Biodegradable
+Mumbai,Andheri,Semi-Urban,55606,49,325,Commercial,1420,1483,646,215,1455,5219,55.6,2,111,Non-Biodegradable
+Delhi,Okhla Industrial Area,Semi-Urban,179183,48,399,Industrial,6205,3006,252,200,681,10344,29.6,1,84,Mixed
+Mumbai,Powai,Industrial,46703,41,40,Industrial,1018,1095,444,355,137,3049,72.5,1,100,Non-Biodegradable
+Lucknow,Gomti Nagar,Urban,90048,126,83,Residential,3638,1772,1482,911,117,7920,62.71,2,150,Mixed
+Meerut,Shastri Nagar,Urban,177911,143,389,Residential,6758,5317,1152,580,898,14705,52.17,2,140,Non-Biodegradable
+Delhi,Dwarka,Urban,176905,61,471,Industrial,8149,4322,446,499,1560,14976,67.36,1,122,Mixed
+Mumbai,Powai,Urban,94159,19,116,Residential,3236,1412,279,97,150,5174,79.57,1,98,Biodegradable
+Lucknow,Charbagh,Semi-Urban,33546,122,449,Residential,1620,932,1205,379,1384,5520,49.04,1,151,Non-Biodegradable
+Delhi,Dwarka,Urban,56956,88,316,Industrial,1806,1407,645,563,1166,5587,46.03,1,100,Non-Biodegradable
+Delhi,Okhla Industrial Area,Industrial,141141,16,242,Residential,4320,2434,151,99,520,7524,66.08,3,107,Mixed
+Mumbai,Dadar,Industrial,101846,48,207,Commercial,2701,2271,481,185,649,6287,77.78,3,83,Non-Biodegradable
+Mumbai,Dadar,Industrial,154346,139,64,Commercial,7473,2597,1972,1363,226,13631,64.35,2,166,Mixed
+Mumbai,Powai,Industrial,162153,125,450,Industrial,5723,3956,1754,450,1536,13419,73.24,3,141,Non-Biodegradable
+Meerut,Modipuram,Industrial,21585,21,253,Commercial,823,568,195,136,1208,2930,41.13,2,93,Non-Biodegradable
+Meerut,Modipuram,Urban,62778,145,347,Commercial,2425,1249,1047,851,1369,6941,38.28,3,171,Non-Biodegradable
+Mumbai,Dadar,Urban,106176,61,308,Residential,5084,2232,620,256,464,8656,33.03,3,96,Mixed
+Lucknow,Alambagh,Semi-Urban,198909,32,68,Industrial,9644,3183,416,234,110,13587,68.32,2,84,Biodegradable
+Mumbai,Bandra,Urban,147992,73,205,Commercial,7208,3293,532,702,361,12096,31.36,2,118,Mixed
+Mumbai,Bandra,Commercial,50841,55,250,Residential,1479,1513,422,379,861,4654,28.09,1,81,Non-Biodegradable
+Delhi,Dwarka,Semi-Urban,89953,36,298,Commercial,2906,2554,461,352,462,6735,51.64,2,76,Non-Biodegradable
+Mumbai,Bandra,Industrial,45674,8,245,Residential,1564,904,42,37,474,3021,68.76,3,97,Mixed
+Pune,Shivajinagar,Semi-Urban,161240,61,412,Commercial,5977,1807,327,557,835,9503,69.32,1,135,Biodegradable
+Lucknow,Alambagh,Semi-Urban,74118,64,418,Residential,3283,1955,640,579,454,6911,77.49,3,105,Mixed
+Delhi,Rohini,Urban,158120,101,214,Residential,5613,4567,1008,555,296,12039,42.44,1,106,Mixed
+Delhi,Saket,Semi-Urban,196527,26,385,Industrial,7475,5846,206,219,1459,15205,23.73,3,72,Mixed
+Delhi,Okhla Industrial Area,Semi-Urban,58711,93,292,Commercial,1221,1036,841,349,660,4107,24.79,2,125,Non-Biodegradable
+Mumbai,Powai,Industrial,40885,76,321,Industrial,1491,1032,532,658,1209,4922,20.4,1,127,Non-Biodegradable
+Delhi,Okhla Industrial Area,Semi-Urban,165087,122,245,Industrial,7618,2497,1646,844,562,13167,47.01,1,155,Mixed
+Pune,Shivajinagar,Commercial,107320,81,350,Industrial,5077,1108,589,278,1498,8550,21.02,2,108,Mixed
+Meerut,Shastri Nagar,Commercial,100181,53,271,Residential,2229,2473,674,256,1205,6837,27.92,2,113,Non-Biodegradable
+Pune,Pimpri-Chinchwad,Urban,82164,55,290,Industrial,2940,1408,454,507,318,5627,25.31,3,94,Mixed
+Delhi,Okhla Industrial Area,Semi-Urban,138995,149,45,Industrial,4913,4107,1232,1103,208,11563,53.55,1,184,Mixed
+Mumbai,Dadar,Urban,59514,41,248,Industrial,2294,1360,543,251,816,5264,21.04,1,77,Non-Biodegradable
+Pune,Hinjewadi,Semi-Urban,101364,128,433,Industrial,3646,2569,754,458,1105,8532,39.57,1,167,Non-Biodegradable
+Lucknow,Charbagh,Industrial,198596,26,387,Residential,7631,2579,357,204,403,11174,35.29,3,101,Biodegradable
+Mumbai,Bandra,Commercial,144275,100,225,Industrial,6363,2465,965,301,875,10969,22.33,1,131,Mixed
+Lucknow,Alambagh,Industrial,26723,96,330,Industrial,1119,315,1392,331,534,3691,29.25,1,118,Non-Biodegradable
+Lucknow,Charbagh,Industrial,87366,144,491,Commercial,3832,2544,1860,779,2032,11047,35.01,2,134,Non-Biodegradable
+Pune,Hinjewadi,Urban,171087,21,66,Commercial,4203,3032,290,188,316,8029,29.21,1,83,Mixed
+Meerut,Ganga Nagar,Commercial,138810,66,378,Commercial,6856,4055,708,566,1155,13340,30.68,1,97,Mixed
+Meerut,Partapur,Urban,56096,88,423,Industrial,2346,1463,864,539,1547,6759,56.29,2,143,Non-Biodegradable
+Delhi,Dwarka,Industrial,62177,124,314,Residential,3084,1183,1614,1227,1502,8610,40.48,2,124,Mixed
+Meerut,Ganga Nagar,Urban,153530,5,61,Commercial,5559,3432,27,44,79,9141,25.04,1,80,Biodegradable
+Pune,Hinjewadi,Commercial,57009,51,477,Industrial,1503,822,331,328,1078,4062,44.46,2,128,Non-Biodegradable
+Delhi,Okhla Industrial Area,Industrial,186280,107,450,Residential,4062,4909,1001,449,1161,11582,56.19,1,113,Non-Biodegradable
+Mumbai,Powai,Industrial,39309,38,142,Commercial,1826,711,314,281,513,3645,33.6,3,74,Mixed
+Pune,Shivajinagar,Urban,134405,107,185,Industrial,5677,1514,962,613,368,9134,22.8,1,136,Biodegradable
+Meerut,Shastri Nagar,Semi-Urban,138559,99,428,Residential,4076,1518,820,620,519,7553,66.42,1,138,Mixed
+Pune,Kothrud,Industrial,28938,43,46,Industrial,836,761,391,393,201,2582,36.59,1,83,Non-Biodegradable
+Mumbai,Dadar,Semi-Urban,25128,147,333,Commercial,657,694,1420,1366,1523,5660,23.52,1,183,Non-Biodegradable
+Mumbai,Dadar,Industrial,65165,60,212,Residential,2550,707,649,382,754,5042,75.28,2,107,Mixed
+Meerut,Modipuram,Industrial,146477,107,399,Commercial,3628,2426,851,1066,412,8383,55.56,3,127,Mixed
+Lucknow,Charbagh,Semi-Urban,161194,85,258,Residential,5018,4457,425,300,901,11101,24.2,3,105,Non-Biodegradable
+Delhi,Dwarka,Urban,103283,137,411,Industrial,4356,2652,1467,927,1989,11391,50.44,1,137,Non-Biodegradable
+Meerut,Ganga Nagar,Semi-Urban,162808,103,156,Commercial,6269,4663,1016,607,406,12961,56.79,3,148,Mixed
+Pune,Hinjewadi,Semi-Urban,22732,134,250,Commercial,892,233,1677,855,392,4049,35.03,2,141,Non-Biodegradable
+Lucknow,Indira Nagar,Semi-Urban,135455,45,152,Industrial,5726,1677,442,225,288,8358,60.65,1,121,Biodegradable
+Mumbai,Bandra,Urban,190160,137,481,Commercial,5920,3945,1571,963,1898,14297,56.39,1,163,Non-Biodegradable
+Lucknow,Alambagh,Commercial,34355,18,113,Residential,699,901,101,99,549,2349,58.66,3,98,Non-Biodegradable
+Delhi,Okhla Industrial Area,Commercial,91965,10,399,Commercial,2602,1360,137,41,1975,6115,21.51,1,97,Non-Biodegradable
+Pune,Shivajinagar,Urban,53435,111,167,Residential,1353,1396,1202,1092,326,5369,38.35,2,152,Non-Biodegradable
+Mumbai,Andheri,Urban,104782,60,56,Commercial,2273,2787,897,237,261,6455,33.21,2,92,Non-Biodegradable
+Lucknow,Alambagh,Semi-Urban,124367,6,224,Residential,6100,2740,88,47,745,9720,54.6,1,83,Biodegradable
+Delhi,Rohini,Commercial,109577,126,252,Industrial,2561,3203,1311,1132,830,9037,41.71,2,168,Non-Biodegradable
+Meerut,Modipuram,Urban,28786,81,442,Industrial,968,298,1204,498,696,3664,33.43,2,99,Non-Biodegradable
+Delhi,Dwarka,Semi-Urban,179175,19,408,Commercial,6601,5315,282,58,1387,13643,42.48,2,64,Non-Biodegradable
+Delhi,Saket,Industrial,73390,12,89,Commercial,2764,1222,129,46,198,4359,54.1,3,88,Biodegradable
+Meerut,Shastri Nagar,Urban,84411,93,434,Residential,1951,999,822,639,2064,6475,35.53,3,145,Non-Biodegradable
+Pune,Pimpri-Chinchwad,Urban,170023,100,293,Commercial,4231,3069,645,628,674,9247,54.56,2,144,Mixed
+Lucknow,Gomti Nagar,Urban,106884,146,194,Residential,4387,1985,796,906,226,8300,70.94,1,167,Mixed
+Mumbai,Bandra,Commercial,141483,149,318,Residential,6147,1985,1495,1023,842,11492,69.05,3,137,Mixed
+Meerut,Shastri Nagar,Industrial,53314,23,292,Industrial,1220,664,326,93,1459,3762,53.45,3,84,Non-Biodegradable
+Meerut,Modipuram,Urban,48863,27,386,Commercial,1945,1253,333,192,1613,5336,51.92,1,93,Non-Biodegradable
+Delhi,Okhla Industrial Area,Commercial,131320,77,474,Commercial,3998,1372,667,366,1121,7524,23.69,1,97,Mixed
+Delhi,Rohini,Commercial,113390,85,157,Industrial,5191,3317,1213,802,499,11022,64.49,2,121,Mixed
+Mumbai,Powai,Industrial,35632,82,305,Commercial,897,607,754,737,1209,4204,66.45,2,122,Non-Biodegradable

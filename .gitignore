@@ -38,13 +38,6 @@ ENV/
 .DS_Store
 Thumbs.db
 
-# Training scripts and data (not needed for deployment)
-data/
-train_model.py
-trainmodel.py
-simulated_train.py
-mock_ml.py
-
 # Logs
 *.log
 logs/
