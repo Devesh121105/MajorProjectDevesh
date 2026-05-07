@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Cities | Waste Analyzer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background: url('/static/compare_image.jpg') no-repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
+            position: relative;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: -1;
+        }
+        
+        .navbar { background: rgba(255,255,255,0.95); padding: 15px 0; box-shadow: 0 2px 20px rgba(0,0,0,0.1); }
+        .navbar-brand, .navbar-brand:hover { color: #2ecc71; font-weight: bold; font-size: 1.5rem; }
+        .back-btn { background: rgba(46,204,113,0.2); border: none; color: #2ecc71; padding: 8px 20px; border-radius: 25px; transition: all 0.3s; }
+        .back-btn:hover { background: #2ecc71; color: white; }
+        .btn-outline-info {
+            border-color: #17a2b8;
+            color: #17a2b8;
+        }
+        .btn-outline-info:hover {
+            background: #17a2b8;
+            border-color: #17a2b8;
+            color: white;
+        }
+        .dashboard-header { background: linear-gradient(135deg, #2ecc71, #27ae60); color: white; padding: 40px 0; margin-bottom: 30px; }
+        .dashboard-header h1 { font-size: 2.5rem; font-weight: bold; margin-bottom: 10px; }
+        .city-selector { background: rgba(255,255,255,0.95); border-radius: 15px; padding: 20px; margin-bottom: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); backdrop-filter: blur(10px); }
+        .stat-card { background: rgba(255,255,255,0.95); border-radius: 15px; padding: 20px; margin-bottom: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); text-align: center; backdrop-filter: blur(10px); }
+        .stat-card .value { font-size: 2rem; font-weight: bold; color: #2ecc71; }
+        .chart-card { background: rgba(255,255,255,0.95); border-radius: 15px; padding: 20px; margin-bottom: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); backdrop-filter: blur(10px); }
+        .chart-container { height: 300px; position: relative; }
+        .comparison-table { background: rgba(255,255,255,0.95); border-radius: 15px; padding: 20px; margin-top: 20px; overflow-x: auto; backdrop-filter: blur(10px); }
+        .comparison-table table { width: 100%; border-collapse: collapse; }
+        .comparison-table th { background: #f8f9fa; padding: 12px; text-align: left; font-weight: 600; }
+        .comparison-table td { padding: 10px 12px; border-bottom: 1px solid #eee; }
+        .risk-badge { display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 500; }
+        .risk-critical { background: #dc3545; color: white; }
+        .risk-high { background: #fd7e14; color: white; }
+        .risk-medium { background: #ffc107; color: #333; }
+        .risk-low { background: #28a745; color: white; }
+        .confusion-img { max-width: 100%; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        footer { text-align: center; padding: 30px; color: white; opacity: 0.8; text-shadow: 1px 1px 2px rgba(0,0,0,0.3); }
+        @media (max-width: 768px) { .dashboard-header h1 { font-size: 1.8rem; } }
+        
+        .btn-outline-primary {
+            border-color: #2ecc71;
+            color: #2ecc71;
+        }
+        .btn-outline-primary:hover {
+            background: #2ecc71;
+            border-color: #2ecc71;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="/"><i class="fas fa-chart-line"></i> Waste Analyzer</a>
+            <div>
+                <a href="/about" class="btn btn-outline-info me-2"><i class="fas fa-info-circle"></i> About Us</a>
+                <a href="/" class="btn back-btn"><i class="fas fa-arrow-left"></i> Back to Home</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="dashboard-header">
+        <div class="container">
+            <h1><i class="fas fa-chart-pie"></i> Compare Cities Dashboard</h1>
+            <p>Compare waste management metrics across different areas of the same city</p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="city-selector">
+            <label class="form-label fw-bold"><i class="fas fa-city"></i> Select City for Comparison:</label>
+            <select id="citySelect" class="form-select" style="max-width: 300px;"><option value="">Select a city...</option></select>
+            <small class="text-muted mt-2 d-block">Areas within the selected city will be compared</small>
+        </div>
+        
+        <div id="dashboardContent" style="display: none;">
+            <div class="row" id="summaryStats">
+                <div class="col-md-4"><div class="stat-card"><div class="value" id="totalWasteAll">-</div><div class="label">Total Daily Waste (kg)</div></div></div>
+                <div class="col-md-4"><div class="stat-card"><div class="value" id="avgRecycling">-</div><div class="label">Average Recycling Rate</div></div></div>
+                <div class="col-md-4"><div class="stat-card"><div class="value" id="highRiskAreas">-</div><div class="label">High Risk Areas</div></div></div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6"><div class="chart-card"><h4><i class="fas fa-chart-bar"></i> Waste Generation by Area</h4><div class="chart-container"><canvas id="wasteByAreaChart"></canvas></div></div></div>
+                <div class="col-md-6"><div class="chart-card"><h4><i class="fas fa-chart-line"></i> AQI Comparison by Area</h4><div class="chart-container"><canvas id="aqiComparisonChart"></canvas></div></div></div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-12"><div class="chart-card"><h4><i class="fas fa-brain"></i> Machine Learning Model Performance</h4><div class="row"><div class="col-md-8"><div class="chart-container" style="height: 250px;"><canvas id="modelPerformanceChart"></canvas></div></div>
+                <div class="col-md-4"><div class="mb-3"><strong>Random Forest</strong><div class="progress mt-1"><div class="progress-bar bg-success" style="width: 89%">89%</div></div></div>
+                <div class="mb-3"><strong>XGBoost (Best)</strong><div class="progress mt-1"><div class="progress-bar bg-success" style="width: 91%">91%</div></div></div>
+                <div class="mb-3"><strong>Gradient Boosting</strong><div class="progress mt-1"><div class="progress-bar bg-warning" style="width: 88%">88%</div></div></div>
+                <div class="mb-3"><strong>Neural Network</strong><div class="progress mt-1"><div class="progress-bar bg-info" style="width: 86%">86%</div></div></div></div></div></div></div>
+            </div>
+            
+            <div class="row"><div class="col-md-12"><div class="chart-card"><h4><i class="fas fa-table"></i> Confusion Matrix - Waste Classification</h4><div class="text-center"><img id="confusionMatrixImg" src="/static/confusion_matrix.png" alt="Confusion Matrix" class="confusion-img" onerror="this.src='https://via.placeholder.com/800x600?text=Run+train_models.py+first'"></div><small class="text-muted mt-2 d-block text-center">XGBoost model predictions vs actual waste types</small></div></div></div>
+            
+            <div class="comparison-table"><h4><i class="fas fa-chart-simple"></i> Area-wise Comparison within City</h4>
+                <table class="table"><thead><tr><th>Area</th><th>Population</th><th>Daily Waste (kg)</th><th>Recycling Rate</th><th>Current AQI</th><th>Waste Type</th><th>Risk Level</th></tr></thead>
+                <tbody id="comparisonTableBody"><tr><td colspan="7" class="text-center">Select a city to view comparison...</td></tr></tbody>
+            </table>
+            </div>
+        </div>
+        
+        <div id="noCitySelected" class="text-center p-5 bg-white rounded shadow"><i class="fas fa-city fa-4x mb-3 text-muted"></i><h4>Select a city from the dropdown above</h4><p>Compare waste management metrics across different areas of the same city</p></div>
+    </div>
+    
+    <footer><p><i class="fas fa-chart-line"></i> Compare Cities Dashboard | Compare areas within same city</p></footer>
+    
+    <script>
+        let wasteByAreaChart, aqiComparisonChart, modelPerformanceChart;
+        
+        function goBack() {
+            const selectedCity = document.getElementById('citySelect')?.value;
+            if (selectedCity) sessionStorage.setItem('dashboardSelectedCity', selectedCity);
+            window.history.back();
+        }
+        
+        window.addEventListener('load', function() {
+            const savedCity = sessionStorage.getItem('dashboardSelectedCity');
+            if (savedCity && document.getElementById('citySelect')) {
+                document.getElementById('citySelect').value = savedCity;
+                document.getElementById('citySelect').dispatchEvent(new Event('change'));
+                sessionStorage.removeItem('dashboardSelectedCity');
+            }
+        });
+        
+        fetch('/api/cities').then(res => res.json()).then(data => {
+            const citySelect = document.getElementById('citySelect');
+            data.cities.forEach(city => { const option = document.createElement('option'); option.value = city; option.textContent = city; citySelect.appendChild(option); });
+        });
+        
+        document.getElementById('citySelect').addEventListener('change', function() {
+            const city = this.value;
+            if (city) { loadCityComparison(city); document.getElementById('dashboardContent').style.display = 'block'; document.getElementById('noCitySelected').style.display = 'none'; }
+            else { document.getElementById('dashboardContent').style.display = 'none'; document.getElementById('noCitySelected').style.display = 'block'; }
+        });
+        
+        function loadCityComparison(city) {
+            fetch('/api/compare', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ city: city }) })
+            .then(res => res.json()).then(data => updateDashboard(data)).catch(err => { console.error('Error:', err); document.getElementById('comparisonTableBody').innerHTML = '<tr><td colspan="7" class="text-center text-danger">Error loading data</td></tr>'; });
+        }
+        
+        function updateDashboard(data) {
+            let totalWaste = 0, totalRecycling = 0, highRiskCount = 0;
+            data.forEach(area => { totalWaste += area.avg_waste; totalRecycling += area.recycling_rate; if (area.risk === 'High' || area.risk === 'Critical') highRiskCount++; });
+            document.getElementById('totalWasteAll').textContent = Math.round(totalWaste).toLocaleString();
+            document.getElementById('avgRecycling').textContent = Math.round(totalRecycling / data.length) + '%';
+            document.getElementById('highRiskAreas').textContent = highRiskCount;
+            
+            const tbody = document.getElementById('comparisonTableBody'); tbody.innerHTML = '';
+            data.forEach(area => { const riskClass = `risk-${area.risk.toLowerCase()}`;
+                tbody.innerHTML += `<tr><td><strong>${area.subarea}</strong></td><td>${area.population.toLocaleString()}</td><td>${Math.round(area.avg_waste)}</td><td>${area.recycling_rate}%</td><td>${area.avg_aqi}</td><td>${area.waste_type}</td><td><span class="risk-badge ${riskClass}">${area.risk}</span></td></tr>`;
+            });
+            
+            const areas = data.map(d => d.subarea), wasteValues = data.map(d => d.avg_waste), aqiValues = data.map(d => d.avg_aqi);
+            if (wasteByAreaChart) wasteByAreaChart.destroy();
+            wasteByAreaChart = new Chart(document.getElementById('wasteByAreaChart'), { type: 'bar', data: { labels: areas, datasets: [{ label: 'Daily Waste (kg)', data: wasteValues, backgroundColor: '#2ecc71' }] }, options: { responsive: true, maintainAspectRatio: false } });
+            if (aqiComparisonChart) aqiComparisonChart.destroy();
+            aqiComparisonChart = new Chart(document.getElementById('aqiComparisonChart'), { type: 'line', data: { labels: areas, datasets: [{ label: 'AQI', data: aqiValues, borderColor: '#dc3545', fill: true }] }, options: { responsive: true, maintainAspectRatio: false } });
+        }
+        
+        if (modelPerformanceChart) modelPerformanceChart.destroy();
+        modelPerformanceChart = new Chart(document.getElementById('modelPerformanceChart'), { type: 'radar', data: { labels: ['Accuracy', 'Precision', 'Recall', 'F1-Score'], datasets: [
+            { label: 'Random Forest', data: [89, 88, 87, 87.5], borderColor: '#3498db', fill: true, backgroundColor: 'rgba(52,152,219,0.2)' },
+            { label: 'XGBoost', data: [91, 90, 89, 89.5], borderColor: '#2ecc71', fill: true, backgroundColor: 'rgba(46,204,113,0.2)' },
+            { label: 'Neural Network', data: [86, 85, 84, 84.5], borderColor: '#9b59b6', fill: true, backgroundColor: 'rgba(155,89,182,0.2)' }
+        ] }, options: { responsive: true, maintainAspectRatio: false, scales: { r: { beginAtZero: true, max: 100 } } } });
+    </script>
+</body>
+</html>

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant | Waste Analyzer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            background: url('/static/chatbot.jpg') no-repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
+            position: relative;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.55);
+            z-index: -1;
+        }
+        
+        .navbar { 
+            background: rgba(255,255,255,0.95); 
+            padding: 15px 0; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+        }
+        
+        .navbar-brand { 
+            font-weight: bold; 
+            font-size: 1.5rem; 
+            background: linear-gradient(135deg, #2ecc71, #27ae60);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .chat-container { 
+            max-width: 900px; 
+            margin: 30px auto; 
+            background: rgba(255,255,255,0.95);
+            border-radius: 20px; 
+            overflow: hidden; 
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            backdrop-filter: blur(10px);
+        }
+        
+        .chat-header { 
+            background: linear-gradient(135deg, #2ecc71, #27ae60); 
+            color: white; 
+            padding: 20px; 
+            text-align: center; 
+        }
+        
+        .chat-header h3 { margin: 0; font-weight: bold; }
+        
+        .area-selector-chat { 
+            background: #f8f9fa; 
+            padding: 15px 20px; 
+            border-bottom: 1px solid #dee2e6; 
+            display: flex; 
+            gap: 15px; 
+            align-items: center; 
+            flex-wrap: wrap; 
+        }
+        
+        .area-selector-chat select { 
+            padding: 8px 15px; 
+            border-radius: 25px; 
+            border: 1px solid #ddd; 
+            background: white; 
+            cursor: pointer; 
+            flex: 1; 
+        }
+        
+        .chat-messages { 
+            height: 400px; 
+            overflow-y: auto; 
+            padding: 20px; 
+            background: rgba(248, 249, 250, 0.9);
+        }
+        
+        .message { margin-bottom: 20px; display: flex; animation: fadeIn 0.3s ease; }
+        
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        
+        .message.user { justify-content: flex-end; }
+        .message.bot { justify-content: flex-start; }
+        
+        .message-content { 
+            max-width: 70%; 
+            padding: 12px 18px; 
+            border-radius: 20px; 
+            line-height: 1.5; 
+            white-space: pre-line; 
+        }
+        
+        .message.user .message-content { 
+            background: linear-gradient(135deg, #2ecc71, #27ae60); 
+            color: white; 
+            border-bottom-right-radius: 5px; 
+        }
+        
+        .message.bot .message-content { 
+            background: white; 
+            color: #333; 
+            border-bottom-left-radius: 5px; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+        }
+        
+        .message-time { font-size: 0.7rem; margin-top: 5px; opacity: 0.6; }
+        
+        .chat-input-area { 
+            padding: 20px; 
+            background: white; 
+            border-top: 1px solid #dee2e6; 
+            display: flex; 
+            gap: 10px; 
+        }
+        
+        .chat-input-area input { 
+            flex: 1; 
+            padding: 12px 18px; 
+            border: 1px solid #ddd; 
+            border-radius: 30px; 
+            outline: none; 
+        }
+        
+        .chat-input-area button { 
+            background: linear-gradient(135deg, #2ecc71, #27ae60); 
+            border: none; 
+            padding: 12px 25px; 
+            border-radius: 30px; 
+            color: white; 
+            font-weight: bold; 
+            transition: all 0.3s; 
+        }
+        
+        .chat-input-area button:hover { transform: scale(1.02); }
+        
+        .quick-actions { 
+            padding: 10px 20px; 
+            background: #f8f9fa; 
+            border-top: 1px solid #dee2e6; 
+            display: flex; 
+            gap: 10px; 
+            flex-wrap: wrap; 
+        }
+        
+        .quick-btn { 
+            background: white; 
+            border: 1px solid #dee2e6; 
+            padding: 6px 15px; 
+            border-radius: 20px; 
+            font-size: 0.85rem; 
+            transition: all 0.2s; 
+        }
+        
+        .quick-btn:hover { 
+            background: #2ecc71; 
+            color: white; 
+            border-color: #2ecc71; 
+        }
+        
+        .typing-indicator { 
+            display: none; 
+            padding: 10px 20px; 
+            background: white; 
+            border-radius: 20px; 
+            width: fit-content; 
+            margin: 10px 20px; 
+        }
+        
+        .typing-indicator span { 
+            display: inline-block; 
+            width: 8px; 
+            height: 8px; 
+            border-radius: 50%; 
+            background: #999; 
+            margin: 0 2px; 
+            animation: typing 1.4s infinite; 
+        }
+        
+        .typing-indicator span:nth-child(2) { animation-delay: 0.2s; }
+        .typing-indicator span:nth-child(3) { animation-delay: 0.4s; }
+        
+        @keyframes typing { 
+            0%, 60%, 100% { transform: translateY(0); } 
+            30% { transform: translateY(-10px); } 
+        }
+        
+        .back-btn { 
+            background: rgba(46,204,113,0.2); 
+            border: none; 
+            padding: 8px 20px; 
+            border-radius: 25px; 
+            color: #2ecc71; 
+        }
+        
+        .back-btn:hover { 
+            background: #2ecc71; 
+            color: white; 
+        }
+        
+        .btn-outline-info {
+            border-color: #17a2b8;
+            color: #17a2b8;
+        }
+        
+        .btn-outline-info:hover {
+            background: #17a2b8;
+            border-color: #17a2b8;
+            color: white;
+        }
+        
+        footer { 
+            text-align: center; 
+            padding: 20px; 
+            color: white; 
+            opacity: 0.8;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+        
+        @media (max-width: 768px) { 
+            .chat-container { margin: 15px; } 
+            .message-content { max-width: 85%; } 
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="/"><i class="fas fa-robot"></i> Waste Analyzer AI</a>
+            <div>
+                <a href="/about" class="btn btn-outline-info me-2"><i class="fas fa-info-circle"></i> About Us</a>
+                <a href="/" class="btn back-btn"><i class="fas fa-arrow-left"></i> Back</a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="chat-container">
+        <div class="chat-header">
+            <h3><i class="fas fa-comments"></i> Waste Management Assistant</h3>
+            <p>Ask me about waste statistics, recycling, AQI, predictions, or control measures</p>
+        </div>
+        
+        <div class="area-selector-chat">
+            <label><i class="fas fa-map-marker-alt"></i> Select City:</label>
+            <select id="citySelect"><option value="">Select City...</option></select>
+            <label><i class="fas fa-location-dot"></i> Select Area:</label>
+            <select id="subareaSelect" disabled><option value="">First select city...</option></select>
+        </div>
+        
+        <div class="chat-messages" id="chatMessages">
+            <div class="text-center p-5 text-muted" id="welcomeMsg">
+                <i class="fas fa-robot fa-3x mb-3"></i>
+                <h5>Hello! I'm your Waste Management Assistant</h5>
+                <p>Select a city and area, then ask me anything!</p>
+                <div class="mt-3">
+                    <small>Try asking:</small><br>
+                    <span class="badge bg-success m-1">What control measures are needed?</span>
+                    <span class="badge bg-success m-1">How much waste is generated?</span>
+                    <span class="badge bg-success m-1">What is the recycling rate?</span>
+                    <span class="badge bg-success m-1">What is the current AQI?</span>
+                    <span class="badge bg-success m-1">Predict waste for next week</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="typing-indicator" id="typingIndicator">
+            <span></span><span></span><span></span>
+        </div>
+        
+        <div class="quick-actions">
+            <button class="quick-btn" onclick="sendQuickMessage('What control measures are needed?')">🛡️ Control Measures</button>
+            <button class="quick-btn" onclick="sendQuickMessage('How much waste is generated daily?')">📊 Waste Stats</button>
+            <button class="quick-btn" onclick="sendQuickMessage('What is the recycling rate?')">♻️ Recycling</button>
+            <button class="quick-btn" onclick="sendQuickMessage('What is the current AQI?')">🌬️ AQI Status</button>
+            <button class="quick-btn" onclick="sendQuickMessage('Predict waste for next week')">📈 Predictions</button>
+        </div>
+        
+        <div class="chat-input-area">
+            <input type="text" id="chatInput" placeholder="Type your message here..." onkeypress="handleKeyPress(event)">
+            <button onclick="sendMessage()"><i class="fas fa-paper-plane"></i> Send</button>
+        </div>
+    </div>
+    
+    <footer>
+        <p><i class="fas fa-robot"></i> AI-Powered Waste Management Assistant</p>
+    </footer>
+    
+    <script>
+        let currentCity = '', currentSubarea = '';
+        
+        fetch('/api/cities').then(res => res.json()).then(data => {
+            const citySelect = document.getElementById('citySelect');
+            data.cities.forEach(city => { const option = document.createElement('option'); option.value = city; option.textContent = city; citySelect.appendChild(option); });
+        });
+        
+        document.getElementById('citySelect').addEventListener('change', function() {
+            currentCity = this.value;
+            const subareaSelect = document.getElementById('subareaSelect');
+            if (!currentCity) { subareaSelect.innerHTML = '<option value="">First select city...</option>'; subareaSelect.disabled = true; return; }
+            subareaSelect.innerHTML = '<option value="">Loading...</option>'; subareaSelect.disabled = true;
+            fetch('/api/subareas', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ city: currentCity }) })
+            .then(res => res.json()).then(data => {
+                subareaSelect.innerHTML = '<option value="">Select Sub-area...</option>';
+                data.subareas.forEach(subarea => { const option = document.createElement('option'); option.value = subarea; option.textContent = subarea; subareaSelect.appendChild(option); });
+                subareaSelect.disabled = false;
+            });
+        });
+        
+        document.getElementById('subareaSelect').addEventListener('change', function() {
+            currentSubarea = this.value;
+            if (currentCity && currentSubarea) {
+                document.getElementById('welcomeMsg').style.display = 'none';
+                addBotMessage(`👋 Hello! I'm your assistant for **${currentSubarea}, ${currentCity}**. Ask me about waste, recycling, AQI, predictions, or control measures!`);
+            }
+        });
+        
+        function handleKeyPress(event) { if (event.key === 'Enter') sendMessage(); }
+        function sendQuickMessage(message) { document.getElementById('chatInput').value = message; sendMessage(); }
+        
+        function sendMessage() {
+            const input = document.getElementById('chatInput'), message = input.value.trim();
+            if (!message) return;
+            if (!currentCity || !currentSubarea) { addBotMessage("⚠️ Please select both a city and sub-area first."); return; }
+            addUserMessage(message); input.value = ''; document.getElementById('typingIndicator').style.display = 'block'; scrollToBottom();
+            fetch('/api/chat', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ message: message, city: currentCity, subarea: currentSubarea }) })
+            .then(res => res.json()).then(data => { document.getElementById('typingIndicator').style.display = 'none'; addBotMessage(data.response); })
+            .catch(err => { document.getElementById('typingIndicator').style.display = 'none'; addBotMessage("❌ Sorry, I'm having trouble connecting. Please try again."); });
+        }
+        
+        function addUserMessage(text) { const messagesDiv = document.getElementById('chatMessages'); const messageDiv = document.createElement('div'); messageDiv.className = 'message user'; messageDiv.innerHTML = `<div class="message-content">${escapeHtml(text)}<div class="message-time">${getCurrentTime()}</div></div>`; messagesDiv.appendChild(messageDiv); scrollToBottom(); }
+        function addBotMessage(text) { const messagesDiv = document.getElementById('chatMessages'); const messageDiv = document.createElement('div'); messageDiv.className = 'message bot'; messageDiv.innerHTML = `<div class="message-content">${formatBotMessage(text)}<div class="message-time">${getCurrentTime()}</div></div>`; messagesDiv.appendChild(messageDiv); scrollToBottom(); }
+        function formatBotMessage(text) { return text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>').replace(/\n/g, '<br>'); }
+        function escapeHtml(text) { const div = document.createElement('div'); div.textContent = text; return div.innerHTML; }
+        function getCurrentTime() { return new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }); }
+        function scrollToBottom() { const messagesDiv = document.getElementById('chatMessages'); messagesDiv.scrollTop = messagesDiv.scrollHeight; }
+    </script>
+</body>
+</html>
