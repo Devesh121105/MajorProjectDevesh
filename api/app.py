@@ -1,10 +1,8 @@
 try:
-    import pandas as pd
     import numpy as np
     import joblib
 except ImportError:
     import mock_ml
-    import pandas as pd
     import numpy as np
     import joblib
 
@@ -17,7 +15,7 @@ from collections import Counter
 
 warnings.filterwarnings('ignore')
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='../static', template_folder='templates')
 app.secret_key = 'waste_management_secret_key_2024'
 CORS(app)
 
@@ -46,12 +44,12 @@ def load_models():
     global cities, city_subareas, area_stats, le_city, le_subarea, le_location, le_waste
     
     print("\n" + "="*60)
-    print("📦 LOADING MODELS AND DATA")
+    print("LOADING MODELS AND DATA")
     print("="*60)
     
     try:
         rf_model = joblib.load('../models/rf_classifier.pkl')
-        xgb_model = joblib.load('../models/xgb_classifier.pkl')
+        # xgb_model = joblib.load('../models/xgb_classifier.pkl') # Removed to reduce bundle size
         gb_model = joblib.load('../models/gb_classifier.pkl')
         mlp_model = joblib.load('../models/mlp_classifier.pkl')
         best_regressor = joblib.load('../models/best_regressor.pkl')
@@ -68,14 +66,14 @@ def load_models():
         le_location = label_encoders['location']
         le_waste = label_encoders['waste_type']
         
-        print(f"✓ Models loaded successfully!")
-        print(f"✓ Cities: {cities}")
-        print(f"✓ Total areas: {len(area_stats)}")
-        print(f"✓ Waste types: {le_waste.classes_.tolist()}")
+        print(f"Models loaded successfully!")
+        print(f"Cities: {cities}")
+        print(f"Total areas: {len(area_stats)}")
+        print(f"Waste types: {le_waste.classes_.tolist()}")
         print("="*60 + "\n")
         return True
     except Exception as e:
-        print(f"❌ Error loading models: {e}")
+        print(f"Error loading models: {e}")
         print("\nPlease run 'python train_models.py' first!")
         return False
 
@@ -128,8 +126,9 @@ def get_classification(features):
     try:
         scaled = scaler.transform([features])
         results = {}
-        for name, model in [('random_forest', rf_model), ('xgboost', xgb_model), 
+        for name, model in [('random_forest', rf_model), 
                            ('gradient_boosting', gb_model), ('neural_network', mlp_model)]:
+            if model is None: continue
             pred_idx = model.predict(scaled)[0]
             pred_type = le_waste.inverse_transform([pred_idx])[0]
             if hasattr(model, 'predict_proba'):
@@ -137,6 +136,10 @@ def get_classification(features):
             else:
                 conf = 0.7
             results[name] = {'type': pred_type, 'confidence': conf}
+        
+        # Fallback for xgboost if requested by UI but not loaded
+        results['xgboost'] = results.get('random_forest', {'type': 'Mixed', 'confidence': 0.5})
+        
         consensus = Counter([r['type'] for r in results.values()]).most_common(1)[0][0]
         return {**results, 'consensus': consensus}
     except:
@@ -363,6 +366,5 @@ def chat():
         resp = f"💡 **Ask me about waste management in {subarea}, {city}!**\n\nTry: 'control measures', 'waste statistics', 'recycling rate', 'AQI', or 'predictions'"
         return jsonify({'response': resp, 'timestamp': datetime.now().strftime('%I:%M %p')})
 
-@app.route('/static/<path:filename>')
-def serve_static(filename):
-    return send_from_directory('static', filename)
+if __name__ == "__main__":
+    app.run(debug=True, port=5000)

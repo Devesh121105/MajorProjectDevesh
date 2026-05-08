@@ -1,0 +1,18 @@
+# Ignore data and training scripts
+data/
+train_model.py
+trainmodel.py
+simulated_train.py
+mock_ml.py
+
+# Ignore local development artifacts
+venv/
+.venv/
+__pycache__/
+*.pyc
+.git/
+.gitignore
+
+# Ignore other unnecessary files
+README.md
+LICENSE
