@@ -12,10 +12,16 @@ import os
 from datetime import datetime, timedelta
 import warnings
 from collections import Counter
+import traceback
 
 warnings.filterwarnings('ignore')
 
-app = Flask(__name__, static_folder='../static', template_folder='templates')
+# Get absolute paths for Vercel
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODELS_DIR = os.path.join(BASE_DIR, '..', 'models')
+STATIC_DIR = os.path.join(BASE_DIR, '..', 'static')
+
+app = Flask(__name__, static_folder=STATIC_DIR, template_folder='templates')
 app.secret_key = 'waste_management_secret_key_2024'
 CORS(app)
 
@@ -48,18 +54,18 @@ def load_models():
     print("="*60)
     
     try:
-        rf_model = joblib.load('../models/rf_classifier.pkl')
-        # xgb_model = joblib.load('../models/xgb_classifier.pkl') # Removed to reduce bundle size
-        gb_model = joblib.load('../models/gb_classifier.pkl')
-        mlp_model = joblib.load('../models/mlp_classifier.pkl')
-        best_regressor = joblib.load('../models/best_regressor.pkl')
-        scaler = joblib.load('../models/scaler.pkl')
-        scaler_reg = joblib.load('../models/scaler_reg.pkl')
-        label_encoders = joblib.load('../models/label_encoders.pkl')
-        class_features = joblib.load('../models/class_features.pkl')
-        cities = joblib.load('../models/cities.pkl')
-        city_subareas = joblib.load('../models/city_subareas.pkl')
-        area_stats = joblib.load('../models/area_stats.pkl')
+        rf_model = joblib.load(os.path.join(MODELS_DIR, 'rf_classifier.pkl'))
+        # xgb_model = joblib.load(os.path.join(MODELS_DIR, 'xgb_classifier.pkl'))
+        gb_model = joblib.load(os.path.join(MODELS_DIR, 'gb_classifier.pkl'))
+        mlp_model = joblib.load(os.path.join(MODELS_DIR, 'mlp_classifier.pkl'))
+        best_regressor = joblib.load(os.path.join(MODELS_DIR, 'best_regressor.pkl'))
+        scaler = joblib.load(os.path.join(MODELS_DIR, 'scaler.pkl'))
+        scaler_reg = joblib.load(os.path.join(MODELS_DIR, 'scaler_reg.pkl'))
+        label_encoders = joblib.load(os.path.join(MODELS_DIR, 'label_encoders.pkl'))
+        class_features = joblib.load(os.path.join(MODELS_DIR, 'class_features.pkl'))
+        cities = joblib.load(os.path.join(MODELS_DIR, 'cities.pkl'))
+        city_subareas = joblib.load(os.path.join(MODELS_DIR, 'city_subareas.pkl'))
+        area_stats = joblib.load(os.path.join(MODELS_DIR, 'area_stats.pkl'))
         
         le_city = label_encoders['city']
         le_subarea = label_encoders['subarea']
@@ -73,8 +79,9 @@ def load_models():
         print("="*60 + "\n")
         return True
     except Exception as e:
-        print(f"Error loading models: {e}")
-        print("\nPlease run 'python train_models.py' first!")
+        print(f"CRITICAL ERROR loading models: {e}")
+        traceback.print_exc()
+        print(f"Looked in directory: {os.path.abspath(MODELS_DIR)}")
         return False
 
 models_loaded = load_models()
